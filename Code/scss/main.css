@@ -24,7 +24,7 @@ header > nav {
   justify-content: space-between;
 }
 header > nav > #title {
-  font-size: 8rem;
+  font-size: 5rem;
   display: flex;
   align-items: center;
 }
