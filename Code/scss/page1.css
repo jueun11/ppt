@@ -1,53 +1,17 @@
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-#root {
-  width: 100vw;
-  height: 100vh;
-  background-color: #F1E2C3;
-}
-
-header {
-  width: 100vw;
-  height: 10vh;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-}
-header > nav {
-  width: 90vw;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-}
-header > nav > #title {
-  font-size: 5rem;
-  display: flex;
-  align-items: center;
-}
-header > nav > ul {
-  width: 30vw;
-  display: flex;
-  list-style: none;
-  justify-content: space-between;
-}
-header > nav > ul > li {
-  font-size: 5rem;
-}
-
 main {
   display: flex;
   flex-direction: row;
 }
 
+#page1 {
+  overflow: hidden;
+}
+
 .container {
   margin-top: 20vh;
+  transition: 3s;
   perspective-origin: center;
   perspective: 1500px;
-  perspective-origin: 50%;
   position: relative;
   z-index: 1;
 }
@@ -108,9 +72,9 @@ main {
 
 .container2 {
   margin-top: 20vh;
+  transition: 3s;
   perspective-origin: center;
   perspective: 1500px;
-  perspective-origin: 50%;
   position: absolute;
   left: 40vw;
   z-index: 2;
@@ -121,7 +85,7 @@ main {
   height: 55vh;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(200px);
+  transform: translateZ(310px);
 }
 
 .box-face2 {
@@ -182,4 +146,4 @@ main {
   display: flex;
   border: 1px solid red;
   display: flex;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=page1.css.map */

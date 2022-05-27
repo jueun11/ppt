@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    *{margin: 0; padding: 0; box-sizing: border-box;
+    overflow-y: hidden;}
+    #root{
+      width: 30000px;
+      height: 100vh;
+      background : linear-gradient(90deg, rgb(255, 117, 82) 0%, rgb(253, 255, 111) 35%, rgba(0,212,255,1) 100%);
+      background-size:cover;
+    }
+  </style>
+</head>
+<body>
+  <div id="root">
+    
+  </div>
+
+  <script>
+    // const root= document.getElementById('root');
+    // root.addEventListener('scroll', (event) => {
+    // });
+    
+    // root.addEventListener('wheel', (event) => {
+    //   event.preventDefault();
+    // });
+    
+    const container = document.querySelector('#root');
+    let offset = 0;
+    
+    window.addEventListener('wheel', e => {
+      offset += Math.sign(e.deltaY) * 200;
+      //edltaY는 마우스휠 y축 스크롤 양
+      //옆의 숫자가 높으면 더 많이 이동한다..y축 스크롤양만큼 이동인데 그걸 늘리니까
+      // event.preventDefault();
+
+      if (offset < 0) {
+        offset = 0;
+      } else if (offset > 30000 - window.innerWidth) {
+        offset = 30000 - window.innerWidth;
+        //숫자가 총 width값이다. 픽셀만 되는듯?
+      }
+
+      container.style.transform = `translateX(-${offset}px`;
+    });
+    //vw로 바꾸면 제대로 실행되지않음
+
+  </script>
+</body>
+</html>

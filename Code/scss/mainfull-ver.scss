@@ -1,9 +1,15 @@
-*{
-  margin: 0; padding: 0; box-sizing: border-box;
+*{margin: 0; padding: 0; box-sizing: border-box;}
+body{
+  height: 100%;
+  background-color: #F1E2C3;
+
 }
 #root{
+  
+}
+#page1{
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #F1E2C3;
 }
 header{
@@ -13,6 +19,8 @@ header{
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: fixed;
+  left: 0;
   &>nav{
     width: 90vw;
     // border: 1px solid red;
@@ -37,7 +45,6 @@ header{
     }
   }
 }
-
 main{
   display: flex;
   flex-direction: row;
@@ -160,7 +167,7 @@ main{
   height: 55vh;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(200px);
+  transform: translateZ(100px);
   //이어지는 부분 튀어나옴
   // border: 1px solid rgb(255, 0, 0);
 
@@ -222,12 +229,6 @@ main{
   height: 800px;
   bottom: 0;
 }
-
-
-
-
-
-
 
 #wall{
   width: 40vw;

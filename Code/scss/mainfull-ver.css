@@ -4,9 +4,14 @@
   box-sizing: border-box;
 }
 
-#root {
+body {
+  height: 100%;
+  background-color: #F1E2C3;
+}
+
+#page1 {
   width: 100vw;
-  height: 100vh;
+  height: 100%;
   background-color: #F1E2C3;
 }
 
@@ -16,6 +21,8 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: center;
+  position: fixed;
+  left: 0;
 }
 header > nav {
   width: 90vw;
@@ -121,7 +128,7 @@ main {
   height: 55vh;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(200px);
+  transform: translateZ(100px);
 }
 
 .box-face2 {
@@ -182,4 +189,4 @@ main {
   display: flex;
   border: 1px solid red;
   display: flex;
-}/*# sourceMappingURL=main.css.map */
+}/*# sourceMappingURL=mainfull-ver.css.map */
