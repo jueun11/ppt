@@ -25,10 +25,13 @@ header{
     align-items: center;
     justify-content: space-between;
     &>#title{
-      font-size: 5rem;
+      font-size: 2rem;
       display: flex;
       align-items: center;
       // border: 1px solid green;
+    }
+    &>#title:hover{
+      cursor: pointer;
     }
     &>ul{
       width: 30vw;
@@ -37,7 +40,10 @@ header{
       list-style: none;
       justify-content: space-between;
       &>li{
-        font-size: 5rem;
+        font-size: 1.5rem;
+      }
+      &>li:hover{
+        cursor: pointer;
       }
     }
   }

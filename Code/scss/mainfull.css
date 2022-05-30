@@ -28,9 +28,12 @@ header > nav {
   justify-content: space-between;
 }
 header > nav > #title {
-  font-size: 5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
+}
+header > nav > #title:hover {
+  cursor: pointer;
 }
 header > nav > ul {
   width: 30vw;
@@ -39,7 +42,10 @@ header > nav > ul {
   justify-content: space-between;
 }
 header > nav > ul > li {
-  font-size: 5rem;
+  font-size: 1.5rem;
+}
+header > nav > ul > li:hover {
+  cursor: pointer;
 }
 
 #root {
