@@ -140,6 +140,7 @@ main {
   margin-top: 20vh;
   z-index: 3;
   display: flex;
+  transition: 3s;
 }
 #wall > h1 {
   font-size: 7vh;
