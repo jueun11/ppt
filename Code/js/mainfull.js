@@ -23,12 +23,15 @@ let page2LeftOffset = page2.offsetLeft;
 let page3leftOffset = page3.offsetLeft;
 let page4leftOffset = page4.offsetLeft;
 
-
+const floor = document.getElementById('floor');
+console.log(floor);
 
 widthValue = container.offsetWidth;
 //내 브라우저의 넓이
 // console.log(widthValue);
+let floorValue = 0;
 
+floor.style.height = `${floorValue}vh`;
 
 
 
@@ -60,17 +63,13 @@ window.addEventListener('wheel', e => {
   
   mainplace.style.perspectiveOrigin = `${perspectiveValue}%`;
   mainplace2.style.perspectiveOrigin = `${perspectiveValue}%`;
-  console.log(offset);
+  // console.log(offset);
 
   if(offset > (page2LeftOffset-page2LeftOffset/2)){
-    console.log('on');
     nav[0].style.color = "#D94B19";
-    // nav.forEach(function(element){
-    //   element.style.color = "#262626";
-    // });
   }
   if(offset > page2LeftOffset+(page2.offsetWidth/2)){
-    console.log('off');
+    // console.log('off');
     nav[0].style.color = "#262626";
 
   }
@@ -78,14 +77,100 @@ window.addEventListener('wheel', e => {
     nav[0].style.color = "#262626";
   }
   // console.log(window.offsetLeft);
+
+  if(offset > page2LeftOffset+(page2.offsetWidth/2)){
+    // console.log('on');
+    nav[1].style.color = "#D94B19";
+    // nav.forEach(function(element){
+    //   element.style.color = "#262626";
+    // });
+  }
+  if(offset > page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+    // console.log('off');
+    nav[1].style.color = "#262626";
+  }
+  if(offset < page2LeftOffset+(page2.offsetWidth/2)){
+    // console.log('off');
+    nav[1].style.color = "#262626";
+  }
+
+  if(offset > page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+    // console.log('off');
+    nav[2].style.color = "#D94B19";
+  }
+  if(offset <  page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+    // console.log('off');
+    nav[2].style.color = "#262626";
+  }
+
+  //계단 액션
+
+  //올라오는 조건
+  if(offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+    let fadeInfloor = setInterval(function(){
+      if(floorValue < 20 ){
+          floorValue = floorValue+0.1;
+          floor.style.height = `${floorValue}vh`;
+          // console.log(floorValue);
+      }
+      else {
+        floor.style.height = "20vh";
+        clearInterval(fadeInfloor);
+
+      }
+    },60);
+  }
+
+  //다음페이지로 넘어감 계단 내려감
+  if( offset > page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+    // console.log('off');
+    let fadeInfloor = setInterval(function(){
+      if(floorValue > 0  ){
+          // let floorValue = 0;
+          floorValue = floorValue-1;
+          floor.style.height = `${floorValue}vh`;
+          // console.log(floorValue);
+      } 
+      else {
+        // floor.style.height = "0vh";
+        clearInterval(fadeInfloor);
+      }
+    },60);
+  }
+
+  //이전페이지로 이동 계단 내려감
+  if(offset < page2LeftOffset+(page2.offsetWidth/2)){
+    // console.log('off');
+    let fadeInfloor = setInterval(function(){
+      if(floorValue > 0  ){
+          // let floorValue = 0;
+          floorValue = floorValue-1;
+          floor.style.height = `${floorValue}vh`;
+          // console.log(floorValue);
+      } 
+      else {
+        // floor.style.height = "0vh";
+        clearInterval(fadeInfloor);
+      }
+    },60);
+  }
+  nav[1].addEventListener('click',function(){
+    if(offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
+      let fadeInfloor = setInterval(function(){
+        if(floorValue < 20 ){
+            floorValue = floorValue+1;
+            floor.style.height = `${floorValue}vh`;
+            console.log(floorValue);
+          }
+          else {
+          floor.style.height = "20vh";
+          clearInterval(fadeInfloor);
+  
+        }
+      },10);
+    }
+  });
 });
-
-//vw로 바꾸면 제대로 실행되지않음
-
-
-
-// console.log(page2LeftOffset);
-//타겟기능을 활용?아냐 타겟을쓰면 각자 다른위치로 이동이 안댈듯
 
 
 nav[0].addEventListener('click',function(event){
@@ -129,8 +214,19 @@ nav[0].addEventListener('click',function(event){
   mainplace.style.perspectiveOrigin = `${perspectiveValue}%`;
   mainplace2.style.perspectiveOrigin = `${perspectiveValue}%`;
 
+  let fadeInfloor = setInterval(function(){
+    if(floorValue > 0  ){
+        // let floorValue = 0;
+        floorValue = floorValue-0.1;
+        floor.style.height = `${floorValue}vh`;
+        // console.log(floorValue);
+    } 
+    else {
+      floor.style.height = "0vh";
+      clearInterval(fadeInfloor);
+    }
+  },0.1);
 
-  
 });
 
 nav[1].addEventListener('click',function(event){
@@ -139,15 +235,23 @@ nav[1].addEventListener('click',function(event){
   
   container.style.transform = `translateX(-${offset}px`;
 
-  console.log(offset);
-  // offset = page2LeftOffset;
   
   let fadeIn = setInterval(function(){
     if( offset < page3leftOffset){
-      console.log(offset);
       offset = offset+10;
-      console.log(offset);
       container.style.transform = `translateX(-${offset}px`;
+
+      if(floorValue < 20 && offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)) {
+        floorValue = floorValue+0.3;
+        floor.style.height = `${floorValue}vh`;
+        console.log(floorValue);
+        // floor.style.height = "20vh";
+    }
+    else {
+      clearInterval(fadeInfloor);
+
+    }
+      
     } 
     else {
       clearInterval(fadeIn);
@@ -156,9 +260,9 @@ nav[1].addEventListener('click',function(event){
   
   let fadeIn2 = setInterval(function(){
     if( offset >= page3leftOffset){
-      console.log(offset);
+      // console.log(offset);
       offset = offset-10;
-      console.log(offset);
+      // console.log(offset);
       
       container.style.transform = `translateX(-${offset}px`;
     } 
@@ -166,6 +270,22 @@ nav[1].addEventListener('click',function(event){
       clearInterval(fadeIn2);
     }
   },0.1);
+  console.log(offset);
+
+  let fadeInfloor = setInterval(function(){
+    if(floorValue < 20 ){
+        floorValue = floorValue+0.1;
+        floor.style.height = `${floorValue}vh`;
+        console.log(floorValue);
+    }
+    else {
+      floor.style.height = "20vh";
+      clearInterval(fadeInfloor);
+
+    }
+  },1);
+
+  
   const out = Array.from(nav).filter(nav => nav !== this);
   out.forEach(function(element){
     element.style.color = "#262626";
@@ -181,14 +301,11 @@ nav[2].addEventListener('click',function(event){
 
   container.style.transform = `translateX(-${offset}px`;
 
-  console.log(offset);
   // offset = page2LeftOffset;
   
   let fadeIn = setInterval(function(){
     if( offset < page4leftOffset){
-      console.log(offset);
       offset = offset+10;
-      console.log(offset);
       container.style.transform = `translateX(-${offset}px`;
     } 
     else {
@@ -198,14 +315,25 @@ nav[2].addEventListener('click',function(event){
   
   let fadeIn2 = setInterval(function(){
     if( offset >= page4leftOffset){
-      console.log(offset);
       offset = offset-10;
-      console.log(offset);
       
       container.style.transform = `translateX(-${offset}px`;
     } 
     else {
       clearInterval(fadeIn2);
+    }
+  },0.1);
+
+  let fadeInfloor = setInterval(function(){
+    if(floorValue > 0  ){
+        // let floorValue = 0;
+        floorValue = floorValue-0.1;
+        floor.style.height = `${floorValue}vh`;
+        // console.log(floorValue);
+    } 
+    else {
+      floor.style.height = "0vh";
+      clearInterval(fadeInfloor);
     }
   },0.1);
 });
@@ -220,7 +348,6 @@ mainTitle.addEventListener('click',function(){
   container.style.transform = `translateX(-${offset}px`;
   let fadeIn = setInterval(function(){
     if( 0 < offset){
-      console.log(offset);
       offset = offset-10;
       container.style.transform = `translateX(-${offset}px`;
     } 
@@ -237,6 +364,19 @@ mainTitle.addEventListener('click',function(){
   perspectiveValue = 20;
   mainplace.style.perspectiveOrigin = `${perspectiveValue}%`;
   mainplace2.style.perspectiveOrigin = `${perspectiveValue}%`;
+
+  let fadeInfloor = setInterval(function(){
+    if(floorValue > 0  ){
+        // let floorValue = 0;
+        floorValue = floorValue-0.1;
+        floor.style.height = `${floorValue}vh`;
+        // console.log(floorValue);
+    } 
+    else {
+      floor.style.height = "0vh";
+      clearInterval(fadeInfloor);
+    }
+  },0.1);
 });
 
 
