@@ -188,92 +188,6 @@ main{
 
 
 
-// .container3{
-//   // width: 3500px;
-//   // height: 2133px;
-//   // border: 1px solid rgb(0, 0, 0);
-//   margin-top: 20vh;
-//   // perspective-origin: bottom right;
-
-//   perspective-origin: center;
-//   perspective: 1500px;
-//   // perspective-origin: top;
-//   // perspective-origin: bottom;
-//   perspective-origin: 50%;
-//   //이거 조절로 시점 돌아간다
-//   // perspective: 23rem;
-//   position: absolute;
-//   left: 40vw;
-//   z-index: 2;
-// }
-// .box3 {
-//   width: 55vw;
-//   height: 55vh;
-//   position: relative;
-//   transform-style: preserve-3d;
-//   transform: translateZ(500px);
-//   //이어지는 부분 튀어나옴
-//   // border: 1px solid rgb(255, 0, 0);
-
-//   //깊이 축
-// }
-// .box-face3{
-//   position: absolute;
-//   width: 800px;
-//   height: 800px;
-//   // width: 55vw;
-//   // height: 55vh;
-//   // border: 1px solid rgb(0, 255, 34);
-  
-//   perspective-origin: center;
-// }
-// .box-front3{
-//   // background-color: rgba(255, 200, 200, 0.7);
-//   transform: rotateY(0deg) 
-//   translateZ(400px) ;
-//   // width: 1600px;
-//   width: 55vw;
-//   height:55vh;
-// }
-// .box-right3{
-//   background-color: rgba(255, 136, 0);
-//   transform: rotateY(90deg) translateZ(400px) ;
-//   height: 55vh;
-
-//   right: 0;
-// }
-// .box-back3{
-//   // background-color: rgba(7, 7, 7, 0.7);
-//   transform: rotateY(180deg) translateZ(800px) ;
-//   // width: 1600px;
-//   width: 55vw;
-//   height: 55vh;
-//   // height: 800px;
-//   // left: 800px;
-
-// }
-// .box-left3{
-//   // background-color: rgba(47, 0, 255, 0.7);
-//   transform: rotateY(-90deg) translateZ(400px) ;
-//   // left: 800px;
-//   height: 55vh;
-// }
-// .box-top3{
-//   // background-color: rgba(255, 0, 234, 0.7);
-//   transform: rotateX(90deg) translateZ(400px) ;
-//   // width: 3200px;
-//   width: 55vw;
-//   height: 800px;
-// }
-// .box-bottom3{
-//   // background-color: rgba(0, 255, 234, 0.7);
-//   transform: rotateX(-90deg) translateZ(400px) ;
-//   // width: 1600px;
-//   width: 55vw;
-//   height: 800px;
-//   bottom: 0;
-// }
-
 #wall{
   width: 40vw;
   background-color: #F1E2C3;
@@ -284,11 +198,11 @@ main{
   display: flex;
   transition: 3s;
   &>h1{
-    // font-size: 5rem;
-    font-size: 7vh;
+    font-size: 3rem;
     display: flex;
-    border: 1px solid red;
-    display: flex
-    ;
+    // border: 1px solid red;
+    display: flex;
+    margin-top: 30vh;
+    margin-left: 5vw;
   }
 }

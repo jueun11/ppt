@@ -18,7 +18,6 @@ header {
   justify-content: center;
   position: fixed;
   left: 0;
-  border: 1px solid red;
   z-index: 5;
 }
 header > nav {
@@ -60,4 +59,24 @@ body {
 
 ::-webkit-scrollbar {
   display: none;
+}
+
+#floor {
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  z-index: 5;
+}
+#floor > div:nth-child(1) {
+  height: 1.5vh;
+  background-color: #fff;
+}
+#floor > div:nth-child(2) {
+  height: 3.5vh;
+  background-color: #F1E2C3;
+}
+#floor > div:nth-child(3) {
+  height: 15vh;
+  background-color: #F2AF5E;
 }/*# sourceMappingURL=mainfull.css.map */

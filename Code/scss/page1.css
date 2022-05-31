@@ -143,8 +143,9 @@ main {
   transition: 3s;
 }
 #wall > h1 {
-  font-size: 7vh;
+  font-size: 3rem;
   display: flex;
-  border: 1px solid red;
   display: flex;
+  margin-top: 30vh;
+  margin-left: 5vw;
 }/*# sourceMappingURL=page1.css.map */

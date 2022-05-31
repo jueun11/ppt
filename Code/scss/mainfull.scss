@@ -16,7 +16,7 @@ header{
   justify-content: center;
   position: fixed;
   left: 0;
-  border: 1px solid red;
+  // border: 1px solid red;
   z-index: 5;
   &>nav{
     width: 90vw;
@@ -65,6 +65,28 @@ body{
   display: none;
 }
 
+#floor{
+  // border: 1px solid green;
+  height: 20vh;
+  width: 100vw;
+  position: fixed;
+  bottom: 0;
+  // overflow: hidden;
+  z-index: 5;
+
+  &>div:nth-child(1){
+    height: 1.5vh;
+    background-color: #fff;
+  }
+  &>div:nth-child(2){
+    height: 3.5vh;
+    background-color: #F1E2C3;
+  }
+  &>div:nth-child(3){
+    height: 15vh;
+    background-color: #F2AF5E;
+  }
+}
 
 
 

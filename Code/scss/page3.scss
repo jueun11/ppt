@@ -13,23 +13,24 @@
   // 설명과액자
   &>section:nth-child(1){
     height: 45vh;
-    border: 1px solid blue;
+    // border: 1px solid blue;
     display: flex;
     flex-direction: row;
     &>div:nth-child(1){
       width: 30vw;
-      background-color: #fff;
+      // background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+      margin-left: 10vw;
       &>h1{
         margin-bottom: 2vh;
       }
     }
     &>article{
-      width: 110vw;
+      width: 100vw;
       // background-color: #ccc;
-      margin-left: 5vw;
+      margin-left: 10vw;
       display: flex;
       // justify-content: space-between;
       justify-content: space-around;
@@ -50,7 +51,7 @@
   // 바닥
   &>section:nth-child(2){
     border: 1px solid green;
-    height: 20vh;
+    height: 0vh;
     width: 150vw;
     position: absolute;
     bottom: 0;
