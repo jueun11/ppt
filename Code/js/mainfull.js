@@ -24,7 +24,7 @@ let page3leftOffset = page3.offsetLeft;
 let page4leftOffset = page4.offsetLeft;
 
 const floor = document.getElementById('floor');
-console.log(floor);
+// console.log(floor);
 
 widthValue = container.offsetWidth;
 //내 브라우저의 넓이
@@ -154,13 +154,15 @@ window.addEventListener('wheel', e => {
       }
     },60);
   }
+
+
   nav[1].addEventListener('click',function(){
     if(offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)){
       let fadeInfloor = setInterval(function(){
         if(floorValue < 20 ){
             floorValue = floorValue+1;
             floor.style.height = `${floorValue}vh`;
-            console.log(floorValue);
+            // console.log(floorValue);
           }
           else {
           floor.style.height = "20vh";
@@ -173,67 +175,93 @@ window.addEventListener('wheel', e => {
 });
 
 
+//페이지 이동 offset은 현재위치
 nav[0].addEventListener('click',function(event){
   event.target.style.color = "#D94B19";
-  container.style.transform = `translateX(-${offset}px`;
-
-  console.log(offset);
-  // offset = page2LeftOffset;
+  // container.style.transform = `translateX(-${offset}px`;
   
-  let fadeIn = setInterval(function(){
-    if( offset < page2LeftOffset){
-      console.log(offset);
-      offset = offset+10;
-      console.log(offset);
-      container.style.transform = `translateX(-${offset}px`;
+  // console.log(offset);
+  // offset = page2LeftOffset;
+  // let moveValue = 0;
+  // while (moveValue < 2){
+    
+    //   if(moveValue == 2){
+      //     break;
+      //   }
+      //   moveValue += 1;
+      // }
+      let fadeIn = setInterval(function(page1move){
+        
+        //현재위치좌표가 2번째페이지(목표페이지)의 좌표보다 작다면
+        if( offset < page2LeftOffset){
+          // console.log(offset);
+          offset = offset+10;
+          //좌표수를 증가시킴
+          // console.log(offset);
+          container.style.transform = `translateX(-${offset}px`;
+          //증가되는 좌표를 대입
+          // for(offset = 0; offset < page2LeftOffset; offset+10){
+            
+            // }
+            // event.stopImmediatePropagation(event);
+            nav[0].removeEventListener('click',page1move);
+            //콜백함수 지정하고 리무브이벤트리스너하기
+            nav[1].addEventListener('click', page1move);
+          //왜 안될까 형식을 잘 모르겟다
+          //그런데, 이렇게하면 버튼이 일회용이 되는것이 아닌가
     } 
     else {
       clearInterval(fadeIn);
     }
+    // if(offset >= page2LeftOffset){
+    //   // break;
+    // }
   },0.1);
-
-  let fadeIn2 = setInterval(function(){
+  
+  let fadeIn2 = setInterval(function(page1move){
+    container.style.transform = `translateX(-${offset}px`;
     if( offset >= page2LeftOffset){
-      console.log(offset);
+      // console.log(offset);
       offset = offset-10;
-      console.log(offset);
-
-      container.style.transform = `translateX(-${offset}px`;
+      // console.log(offset);
+      // event.stopImmediatePropagation(event);
+      nav[0].removeEventListener('click',page1move);
+      nav[1].addEventListener('click', page1move);
     } 
     else {
       clearInterval(fadeIn2);
     }
   },0.1);
-  // container.scrollIntoView({ behavior: 'smooth' });
+  container.scrollIntoView({ behavior: 'smooth' });
   const out = Array.from(nav).filter(nav => nav !== this);
   out.forEach(function(element){
     element.style.color = "#262626";
   });
-
+  
   perspectiveValue = 90;
   mainplace.style.perspectiveOrigin = `${perspectiveValue}%`;
   mainplace2.style.perspectiveOrigin = `${perspectiveValue}%`;
-
+  
   let fadeInfloor = setInterval(function(){
     if(floorValue > 0  ){
-        // let floorValue = 0;
-        floorValue = floorValue-0.1;
-        floor.style.height = `${floorValue}vh`;
-        // console.log(floorValue);
+      // let floorValue = 0;
+      floorValue = floorValue-0.1;
+      floor.style.height = `${floorValue}vh`;
+      // console.log(floorValue);
     } 
     else {
       floor.style.height = "0vh";
       clearInterval(fadeInfloor);
     }
   },0.1);
-
+  
 });
 
 nav[1].addEventListener('click',function(event){
   event.target.style.color = "#D94B19";
-  
-  
   container.style.transform = `translateX(-${offset}px`;
+  // offset = widthValue - window.innerWidth;
+  // offset = page2LeftOffset;
 
   
   let fadeIn = setInterval(function(){
@@ -244,12 +272,11 @@ nav[1].addEventListener('click',function(event){
       if(floorValue < 20 && offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)) {
         floorValue = floorValue+0.3;
         floor.style.height = `${floorValue}vh`;
-        console.log(floorValue);
+        // console.log(floorValue);
         // floor.style.height = "20vh";
     }
     else {
       clearInterval(fadeInfloor);
-
     }
       
     } 
@@ -270,7 +297,7 @@ nav[1].addEventListener('click',function(event){
       clearInterval(fadeIn2);
     }
   },0.1);
-  console.log(offset);
+  // console.log(offset);
 
   let fadeInfloor = setInterval(function(){
     if(floorValue < 20 ){
@@ -380,13 +407,13 @@ mainTitle.addEventListener('click',function(){
 });
 
 
-console.dir(page2);
+// console.dir(page2);
 //특정 영역에서 상단 바 색상 변경
 //1. 그 영역에 도착하면 색상이 들어옴 
 //- 왼쪽절대값
 //2. 그 영역을 넘어가면 색상이 빠짐
 //- 왼쪽 절대값 + 페이지의 길이
-console.log(offset);
+// console.log(offset);
 if(offset > page2LeftOffset){
   console.log('불 들어온다');
 }
