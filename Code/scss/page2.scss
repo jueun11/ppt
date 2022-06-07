@@ -1,5 +1,5 @@
 #page2{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 100vw;
   height: 100vh;
 
@@ -10,15 +10,51 @@
   justify-content: center;
   scroll-behavior: smooth;
   // margin-top: 20vh;
+  //전등
   &>section:nth-child(1){
-    border: 1px solid blue;
-    height: 15vh;
+    // border: 1px solid blue;
+    height: 20vh;
     width: 100vw;
     top: 0;
     position: absolute;
+    &>div{
+      width: 20vw;
+      height: 20vh;
+      margin-left: 15vw;
+      // border: 1px solid red;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &>#lightstring{
+        height: 12vh;
+        width: 5px;
+        background-color: #F2AF5E;
+      }
+      &>#lightbody{
+        width: 0;
+        height: 0;
+        position: relative;
+        top: -2vh;
+        border-bottom: 50px solid#F2AF5E;
+        // border-top: 50px solid transparent;
+        border-left: 70px solid transparent;
+        border-right: 70px solid transparent;
+      }
+      &>#light{
+        width: 40vw;
+        height: 50vh;
+        // border: 1px solid red;
+        position: absolute;
+        top: 20vh;
+        border-radius: 50vh 50vh 0px 0px;
+        background: radial-gradient(at 50% 0%
+        , rgba(255,255,255,0.5),rgba(255,255,255,0));
+        transition: 1s;
+      }
+    }
   }
   &>section:nth-child(2){
-    border: 1px solid rgb(0, 255, 55);
+    // border: 1px solid rgb(0, 255, 55);
     height: 50vh;
     display: flex;
     flex-direction: row;
@@ -39,7 +75,7 @@
       }
     }
     &>div:nth-child(2){
-      border: 1px solid blue;
+      // border: 1px solid blue;
       width: 45vw;
       &>h1{
 

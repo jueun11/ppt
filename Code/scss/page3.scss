@@ -1,5 +1,5 @@
 #page3{
-  border: 1px solid red;
+  // border: 1px solid red;
   width: 150vw;
   height: 100vh;
   // background-color: rgb(168, 168, 168);
@@ -9,7 +9,6 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  // align-items: center;
   // 설명과액자
   &>section:nth-child(1){
     height: 45vh;
@@ -17,14 +16,19 @@
     display: flex;
     flex-direction: row;
     &>div:nth-child(1){
-      width: 30vw;
+      width: 40vw;
       // background-color: #fff;
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
       margin-left: 10vw;
       &>h1{
+        font-size: 3rem;
         margin-bottom: 2vh;
+      }
+      &>p{
+        font-size: 0.8rem;
+        text-align: justify;
       }
     }
     &>article{
@@ -50,7 +54,7 @@
   }
   // 바닥
   &>section:nth-child(2){
-    border: 1px solid green;
+    // border: 1px solid green;
     height: 0vh;
     width: 150vw;
     position: absolute;
@@ -67,6 +71,62 @@
     &>div:nth-child(3){
       height: 15vh;
       background-color: #F2AF5E;
+      bottom: 0;
     }
   }
+}
+
+#popup{
+  width: 100vw;
+  height: 100vh;
+  border: 1px solid red;
+  position: absolute;
+  z-index: 3;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row-reverse;
+  // justify-content: center;
+  // display: flex;
+  // position: fixed;
+  
+  // left좌표를 활용해야할듯
+  // left: 0;
+  &>section{
+    width: 50vw;
+    height: 45vh;
+    border: 1px solid red;
+    margin-left: 5vw;
+    &>div:nth-child(1){
+      height: 15vh;
+      border: 1px solid black;
+      display: flex;
+      justify-content: end;
+      &>div{
+        width: 5vw;
+        height: 12vh;
+        background-color: #81A6C0;
+        transform: rotate(40deg);
+        margin-right: 5vw;
+      }
+    }
+    &>div:nth-child(2){
+      margin-top: 5vh;
+      width: 50vw;
+      height: 25vh;
+      background-color: #fff;
+    }
+  }
+}
+
+#esc{
+  width: 7vh;
+  height: 7vh;
+  background-color: #F2AF5E;
+  position: absolute;
+  top: 12vh;
+  right: 5vw;
+}
+#esc:hover{
+  cursor: pointer;
 }

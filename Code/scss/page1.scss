@@ -13,7 +13,7 @@ main{
   // border: 1px solid rgb(0, 0, 0);
   margin-top: 20vh;
   // perspective-origin: bottom right;
-  transition: 3s;
+  transition: 2s;
   perspective-origin: center;
   perspective: 1500px;
   // perspective-origin: top;
@@ -105,7 +105,7 @@ main{
   // border: 1px solid rgb(0, 0, 0);
   margin-top: 20vh;
   // perspective-origin: bottom right;
-  transition: 3s;
+  transition: 2s;
 
   perspective-origin: center;
   perspective: 1500px;
@@ -196,7 +196,7 @@ main{
   margin-top: 20vh;
   z-index: 3;
   display: flex;
-  transition: 3s;
+  transition: 2s;
   &>h1{
     font-size: 3rem;
     display: flex;
