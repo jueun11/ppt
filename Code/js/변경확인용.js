@@ -1,9 +1,3 @@
-const container = document.querySelector('#root');
-let offset = 0;
-
-
-
-
 let perspectiveValue = 20;
 const mainplace = document.querySelector('.container');
 const mainplace2 = document.querySelector('.container2');
@@ -14,14 +8,6 @@ mainplace2.style.perspectiveOrigin = `${perspectiveValue}%`;
 //* 투시박스 조절
 
 
-const nav = document.querySelectorAll('nav > ul > li');
-Array.from(nav);
-const page2 = document.getElementById('page2');
-const page3 = document.getElementById('page3');
-const page4 = document.getElementById('page4');
-let page2LeftOffset = page2.offsetLeft;
-let page3leftOffset = page3.offsetLeft;
-let page4leftOffset = page4.offsetLeft;
 //*각 페이지 좌표 구하기
 const floor = document.getElementById('floor');
 // console.log(floor);   
@@ -194,61 +180,6 @@ if(offset > page2LeftOffset-(page2LeftOffset/4)){
 
 //페이지 이동 offset은 현재위치
 nav[0].addEventListener('click',function(event){
-  event.target.style.color = "#D94B19";
-  // container.style.transform = `translateX(-${offset}px`;
-  
-  // console.log(offset);
-  // offset = page2LeftOffset;
-  // let moveValue = 0;
-  // while (moveValue < 2){
-    
-    //   if(moveValue == 2){
-      //     break;
-      //   }
-      //   moveValue += 1;
-      // }
-      let fadeIn = setInterval(function(page1move){
-        
-        //현재위치좌표가 2번째페이지(목표페이지)의 좌표보다 작다면
-        if( offset < page2LeftOffset){
-          // console.log(offset);
-          offset = offset+50;
-          //좌표수를 증가시킴
-          // console.log(offset);
-          container.style.transform = `translateX(-${offset}px`;
-          //증가되는 좌표를 대입
-          // for(offset = 0; offset < page2LeftOffset; offset+10){
-            
-            // }
-            // event.stopImmediatePropagation(event);
-            nav[0].removeEventListener('click',page1move);
-            //콜백함수 지정하고 리무브이벤트리스너하기
-            nav[1].addEventListener('click', page1move);
-          //왜 안될까 형식을 잘 모르겟다
-          //그런데, 이렇게하면 버튼이 일회용이 되는것이 아닌가
-    } 
-    else {
-      clearInterval(fadeIn);
-    }
-    // if(offset >= page2LeftOffset){
-    //   // break;
-    // }
-  },0.1);
-  
-  let fadeIn2 = setInterval(function(page1move){
-    container.style.transform = `translateX(-${offset}px`;
-    if( offset >= page2LeftOffset){
-      // console.log(offset);
-      offset = offset-50;
-      // console.log(offset);
-      // event.stopImmediatePropagation(event);
-      nav[0].removeEventListener('click',page1move);
-      nav[1].addEventListener('click', page1move);
-    } 
-    else {
-      clearInterval(fadeIn2);
-    }
-  },0.1);
   container.scrollIntoView({ behavior: 'smooth' });
   const out = Array.from(nav).filter(nav => nav !== this);
   out.forEach(function(element){
@@ -275,47 +206,20 @@ nav[0].addEventListener('click',function(event){
 });
 
 nav[1].addEventListener('click',function(event){
-  event.target.style.color = "#D94B19";
-  container.style.transform = `translateX(-${offset}px`;
-  // offset = widthValue - window.innerWidth;
-  // offset = page2LeftOffset;
-
-  
   let fadeIn = setInterval(function(){
     if( offset < page3leftOffset){
-      offset = offset+50;
-      container.style.transform = `translateX(-${offset}px`;
-
       if(floorValue < 20 && offset > page2LeftOffset+(page2.offsetWidth/2) && offset < page3leftOffset+(page3.offsetWidth/2)+(page3.offsetWidth/4)) {
         floorValue = floorValue+5;
         floor.style.height = `${floorValue}vh`;
-        // console.log(floorValue);
-        // floor.style.height = "20vh";
     }
     else {
       clearInterval(fadeInfloor);
     }
-      
     } 
     else {
       clearInterval(fadeIn);
     }
   },0.1);
-  
-  let fadeIn2 = setInterval(function(){
-    if( offset >= page3leftOffset){
-      // console.log(offset);
-      offset = offset-50;
-      // console.log(offset);
-      
-      container.style.transform = `translateX(-${offset}px`;
-    } 
-    else {
-      clearInterval(fadeIn2);
-    }
-  },0.1);
-  // console.log(offset);
-
   let fadeInfloor = setInterval(function(){
     if(floorValue < 20 ){
         floorValue = floorValue+5;

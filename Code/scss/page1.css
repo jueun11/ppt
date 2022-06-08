@@ -8,20 +8,24 @@ main {
 }
 
 .container {
-  margin-top: 20vh;
-  transition: 2s;
+  height: 100vh;
+  width: 90vw;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
   perspective-origin: center;
-  perspective: 1500px;
+  perspective: 500px;
   position: relative;
   z-index: 1;
 }
 
 .box {
+  margin-top: -5vh;
   width: 55vw;
   height: 55vh;
   position: relative;
   transform-style: preserve-3d;
-  transform: translateZ(-400px);
+  transform: translateZ(150px);
 }
 
 .box-face {
@@ -33,18 +37,17 @@ main {
 
 .box-front {
   transform: rotateY(0deg) translateZ(400px);
-  width: 55vw;
-  height: 55vh;
 }
 
 .box-right {
-  background-color: rgb(255, 136, 0);
+  background-color: rgb(255, 0, 157);
   transform: rotateY(90deg) translateZ(400px);
   height: 55vh;
   right: 0;
 }
 
 .box-back {
+  background-color: rgb(7, 7, 7);
   transform: rotateY(180deg) translateZ(400px);
   width: 55vw;
   height: 55vh;
@@ -60,75 +63,11 @@ main {
 .box-top {
   transform: rotateX(90deg) translateZ(400px);
   width: 55vw;
-  height: 800px;
 }
 
 .box-bottom {
   transform: rotateX(-90deg) translateZ(400px);
   width: 55vw;
-  height: 800px;
-  bottom: 0;
-}
-
-.container2 {
-  margin-top: 20vh;
-  transition: 2s;
-  perspective-origin: center;
-  perspective: 1500px;
-  position: absolute;
-  left: 40vw;
-  z-index: 2;
-}
-
-.box2 {
-  width: 55vw;
-  height: 55vh;
-  position: relative;
-  transform-style: preserve-3d;
-  transform: translateZ(310px);
-}
-
-.box-face2 {
-  position: absolute;
-  width: 800px;
-  height: 800px;
-  perspective-origin: center;
-}
-
-.box-front2 {
-  transform: rotateY(0deg) translateZ(400px);
-  width: 55vw;
-  height: 55vh;
-}
-
-.box-right2 {
-  background-color: rgb(255, 136, 0);
-  transform: rotateY(90deg) translateZ(400px);
-  height: 55vh;
-  right: 0;
-}
-
-.box-back2 {
-  transform: rotateY(180deg) translateZ(800px);
-  width: 55vw;
-  height: 55vh;
-}
-
-.box-left2 {
-  transform: rotateY(-90deg) translateZ(400px);
-  height: 55vh;
-}
-
-.box-top2 {
-  transform: rotateX(90deg) translateZ(400px);
-  width: 55vw;
-  height: 800px;
-}
-
-.box-bottom2 {
-  transform: rotateX(-90deg) translateZ(400px);
-  width: 55vw;
-  height: 800px;
   bottom: 0;
 }
 
@@ -138,9 +77,9 @@ main {
   height: 55vh;
   border: 1px solid black;
   margin-top: 20vh;
-  z-index: 3;
+  z-index: 1;
   display: flex;
-  transition: 2s;
+  position: relative;
 }
 #wall > h1 {
   font-size: 3rem;
