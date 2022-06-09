@@ -157,7 +157,7 @@ window.addEventListener('wheel', e => {
 // todo 메뉴바 
 const nav = document.querySelectorAll('nav > ul > li');
 Array.from(nav);
-console.log(nav);
+// console.log(nav);
 //*nav를 배열로 바꿔줬다
 
 const title = document.getElementById('title');

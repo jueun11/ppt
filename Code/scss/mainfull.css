@@ -41,7 +41,7 @@ header > nav > ul {
   justify-content: space-between;
 }
 header > nav > ul > li {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 header > nav > ul > li:hover {
   cursor: pointer;
