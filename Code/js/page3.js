@@ -16,7 +16,6 @@ for(i=0; i<PhotoFrames.length; i++){
   });
 }
 //마우스 오버 이벤트 끝
-
 //todo 클릭 이벤트
 const page3bg = document.querySelector('#page3 > section:nth-child(1)');
 const popups = document.getElementById('popups');
