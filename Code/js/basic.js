@@ -1,3 +1,4 @@
+import { popups,page3bg,popup,esc } from "./page3.js";
 const root = document.getElementById('root');
 let offset = 0;
 let widthValue = root.offsetWidth;
@@ -60,8 +61,8 @@ window.addEventListener('wheel', e => {
 
 
   //todo 스크롤위치에따른 배경 투시 변경
-  console.log(offset/15);
-  console.log(placeValue);
+  // console.log(offset/15);
+  // console.log(placeValue);
   // placeValue = 10;
   //*투시에 사용할 변수이다. 마지노선 60
   placeValue = 10 + (offset/10);
@@ -141,8 +142,6 @@ window.addEventListener('wheel', e => {
     },60);
   }
 
-
-
   //휠 동작중 전등 불 제어
   if(offset < page2LeftOffset-(page2LeftOffset/3)){
     light.style.opacity = 0;
@@ -174,13 +173,14 @@ let page4leftOffset = page4.offsetLeft;
 
 
 //*클릭한 메뉴만 색이 변하도록 한다
+let i = 0;
 for(i=0; i < nav.length; i++){
   nav[i].addEventListener('click',function(event){
     nav.forEach(function(element){
-      element.style.color = "blue";
+      element.style.color = "#262626";
     });
     //*forEach를 앞에 써서 일단 다 원색으로 돌리고
-    event.target.style.color = "red";
+    event.target.style.color = "#D94B19";
     //*후에 event.target...클릭한 부분의 색만 바꿔준다
   });
 }
@@ -188,7 +188,15 @@ for(i=0; i < nav.length; i++){
 //todo 메뉴 클릭에 따른 좌표이동 
 //* this를 활용할 방법을 못찾았다. 메뉴는 많지 않으니 각 메뉴마다 이벤트를 넣는 방식을 선택
 title.addEventListener('click',function(){
-  page1.style.opacity = 1;
+  opacityValue = 1;
+  page1.style.opacity = opacityValue;
+  //*팝업창 닫기
+  popups.style.display = "none";
+  page3bg.style.opacity = 1;
+  for(i=0; i<popup.length; i++){
+    popup[i].style.display = "none";
+  }
+  esc.style.display="none";
   let placeValue = 10;
   mainplace.style.perspectiveOrigin = `${placeValue}%`;
   let fadeIn = setInterval(function(){
@@ -203,10 +211,8 @@ title.addEventListener('click',function(){
     //*계단 사라짐
     let fadeInfloor = setInterval(function(){
       if(floorValue > 0  ){
-        // let floorValue = 0;
         floorValue = floorValue-5;
         floor.style.height = `${floorValue}vh`;
-        // console.log(floorValue);
       } 
       else {
         floor.style.height = "0vh";
@@ -216,6 +222,14 @@ title.addEventListener('click',function(){
 });
 
 nav[0].addEventListener('click',function(){
+  opacityValue = 0;
+  page1.style.opacity = opacityValue;
+  page3bg.style.opacity = 1;
+  for(i=0; i<popup.length; i++){
+    popup[i].style.display = "none";
+  }
+  esc.style.display="none";
+
   let fadeInleft = setInterval(function(){
     if(offset < page2LeftOffset){
       offset = offset+50;
@@ -249,6 +263,13 @@ nav[0].addEventListener('click',function(){
 });
 
 nav[1].addEventListener('click',function(){
+  popups.style.display = "none";
+  page3bg.style.opacity = 1;
+  for(i=0; i<popup.length; i++){
+    popup[i].style.display = "none";
+  }
+  esc.style.display="none";
+
   let fadeInleft = setInterval(function(){
     if(offset < page3leftOffset){
       offset = offset+50;
@@ -281,6 +302,12 @@ nav[1].addEventListener('click',function(){
 });
 
 nav[2].addEventListener('click',function(){
+  popups.style.display = "none";
+  page3bg.style.opacity = 1;
+  for(i=0; i<popup.length; i++){
+    popup[i].style.display = "none";
+  }
+  esc.style.display="none";
   let fadeInleft = setInterval(function(){
     if(offset < page4leftOffset){
       offset = offset+50;
@@ -293,10 +320,8 @@ nav[2].addEventListener('click',function(){
     //*계단 사라짐
     let fadeInfloor = setInterval(function(){
       if(floorValue > 0  ){
-        // let floorValue = 0;
         floorValue = floorValue-5;
         floor.style.height = `${floorValue}vh`;
-        // console.log(floorValue);
       } 
       else {
         floor.style.height = "0vh";

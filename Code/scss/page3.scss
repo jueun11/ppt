@@ -39,7 +39,7 @@
       // justify-content: space-between;
       justify-content: space-around;
       align-items: center;
-      &>li:nth-child(1){
+      &>li{
         width: 20vw;
         height: 45vh;
         background-color: #D94B19;
@@ -57,7 +57,7 @@
         &>div:nth-child(2){
           position:absolute;
           z-index: 2;
-          background-color: rgba(128, 128, 128,0.7);
+          background-color: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(10px);
           width: 90%;
           height: 92%;
@@ -66,78 +66,15 @@
           justify-content: center;
           flex-direction: column;
           &>h1{
-            color: #fff;
+            color: var(--color-6);
           }
           &>p{
-            color: #fff;
+            color: var(--color-6);
           }
         }
       }
-      &>li:nth-child(2){
-        width: 20vw;
-        height: 45vh;
-        background-color: #ccd919;
-        padding: 2vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        &>div:nth-child(1){
-          width: 100%;
-          height: 100%;
-          background-color: #fff;
-        }
-        &>div:nth-child(2){
-          position:absolute;
-          z-index: 2;
-          background-color: rgba(128, 128, 128,0.7);
-          backdrop-filter: blur(10px);
-          width: 90%;
-          height: 92%;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          &>h1{
-            color: #fff;
-          }
-          &>p{
-            color: #fff;
-          }
-        }
-      }
-      &>li:nth-child(3){
-        width: 20vw;
-        height: 45vh;
-        background-color: #1993d9;
-        padding: 2vh;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        position: relative;
-        &>div:nth-child(1){
-          width: 100%;
-          height: 100%;
-          background-color: #fff;
-        }
-        &>div:nth-child(2){
-          position:absolute;
-          z-index: 2;
-          background-color: rgba(128, 128, 128,0.7);
-          backdrop-filter: blur(10px);
-          width: 90%;
-          height: 92%;
-          display: none;
-          align-items: center;
-          justify-content: center;
-          flex-direction: column;
-          &>h1{
-            color: #fff;
-          }
-          &>p{
-            color: #fff;
-          }
-        }
+      &>li:hover{
+        cursor: pointer;
       }
     }
   }
@@ -151,15 +88,15 @@
     overflow: hidden;
     &>div:nth-child(1){
       height: 1.5vh;
-      background-color: #fff;
+      background-color: var(--color-6);
     }
     &>div:nth-child(2){
       height: 3.5vh;
-      background-color: #F1E2C3;
+      background-color: var(--color-3)
     }
     &>div:nth-child(3){
       height: 15vh;
-      background-color: #F2AF5E;
+      background-color: var(--color-2);
       bottom: 0;
     }
   }
@@ -168,7 +105,7 @@
   display: none;
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
+  // border: 1px solid red;
   position: absolute;
   z-index: 3;
   align-items: center;
@@ -182,7 +119,7 @@
   &>section:nth-child(1){
     width: 20vw;
     height: 45vh;
-    background-color: #D94B19;
+    background-color: var(--color-1);
     padding: 2vh;
     display: flex;
     align-items: center;
@@ -191,23 +128,23 @@
     &>div:nth-child(1){
       width: 100%;
       height: 100%;
-      background-color: #fff;
+      background-color: var(--color-6);
     }
   }
   &>section:nth-child(2){
     width: 50vw;
     height: 45vh;
-    border: 1px solid red;
+    // border: 1px solid red;
     margin-left: 5vw;
     &>div:nth-child(1){
       height: 15vh;
-      border: 1px solid black;
+      // border: 1px solid black;
       display: flex;
       justify-content: end;
       &>div{
         width: 5vw;
         height: 12vh;
-        background-color: #81A6C0;
+        background-color: var(--color-4);
         transform: rotate(40deg);
         margin-right: 5vw;
       }
@@ -216,7 +153,7 @@
       margin-top: 5vh;
       width: 50vw;
       height: 25vh;
-      background-color: #fff;
+      background-color: var(--color-6);
     }
   }
 }
@@ -224,7 +161,7 @@
 #esc{
   width: 7vh;
   height: 7vh;
-  background-color: #F2AF5E;
+  background-color: var(--color-2);
   position: absolute;
   top: 12vh;
   right: 5vw;

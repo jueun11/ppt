@@ -40,22 +40,22 @@ main {
 }
 
 .box-right {
-  background-color: rgb(255, 0, 157);
+  background-color: var(--color-2);
   transform: rotateY(90deg) translateZ(400px);
   height: 55vh;
   right: 0;
 }
 
 .box-back {
-  background-color: rgb(7, 7, 7);
+  background-color: var(--color-3);
   transform: rotateY(180deg) translateZ(400px);
   width: 55vw;
   height: 55vh;
-  border: 1px solid #272727;
+  border: 1px solid var(--color-5);
 }
 
 .box-left {
-  background-color: #D94B19;
+  background-color: var(--color-1);
   transform: rotateY(-90deg) translateZ(400px);
   height: 55vh;
 }
@@ -73,9 +73,9 @@ main {
 
 #wall {
   width: 40vw;
-  background-color: #F1E2C3;
+  background-color: var(--color-3);
   height: 55vh;
-  border: 1px solid black;
+  border: 1px solid var(--color-5);
   margin-top: 25vh;
   z-index: 1;
   display: flex;

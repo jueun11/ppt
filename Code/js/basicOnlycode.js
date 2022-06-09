@@ -109,6 +109,7 @@ window.addEventListener('wheel', e => {
   }
   if(offset < page2LeftOffset-(page2LeftOffset/3)){
     light.style.opacity = 0;
+    
   }
   if(offset > page2LeftOffset-(page2LeftOffset/3)){
     light.style.opacity = 1;
@@ -133,7 +134,8 @@ for(i=0; i < nav.length; i++){
   });
 }
 title.addEventListener('click',function(){
-  page1.style.opacity = 1;
+  opacityValue = 1;
+  page1.style.opacity = opacityValue;
   let placeValue = 10;
   mainplace.style.perspectiveOrigin = `${placeValue}%`;
   let fadeIn = setInterval(function(){
@@ -156,6 +158,8 @@ title.addEventListener('click',function(){
     },0.1);
 });
 nav[0].addEventListener('click',function(){
+  opacityValue = 0;
+  page1.style.opacity = opacityValue;
   let fadeInleft = setInterval(function(){
     if(offset < page2LeftOffset){
       offset = offset+50;
@@ -174,8 +178,10 @@ nav[0].addEventListener('click',function(){
   },0.1);
   let fadeInfloor = setInterval(function(){
     if(floorValue > 0  ){
+      // let floorValue = 0;
       floorValue = floorValue-5;
       floor.style.height = `${floorValue}vh`;
+      // console.log(floorValue);
     } 
     else {
       floor.style.height = "0vh";
