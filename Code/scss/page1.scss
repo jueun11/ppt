@@ -88,12 +88,36 @@ main{
   // height: 800px;
 }
 .box-bottom{
-  // background-color: rgba(0, 255, 234, 0.7);
+  // background: linear-gradient(250deg,#F1E2C3 80%,rgba(0,0,0,0.2));
   transform: rotateX(-90deg) translateZ(400px) ;
   // width: 1600px;
-  width: 55vw;
-  // height: 800px;
   bottom: 0;
+  &>div:nth-child(1){
+    width: 25%;
+    height: 31%;
+    position: absolute;
+    z-index: 1;
+    // top: 0;
+    bottom: 0;
+  
+    
+    border-style: solid;
+    border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0,0.2) 100%);
+    border-image-slice: 1;
+    border-image-width:00px 0 250px 0;
+    // border-top: 250px solid #F1E2C3;
+  }
+  &>div:nth-child(2){
+    width: 20%;
+    height: 31%;
+    position: absolute;
+    z-index: 2;
+    // top: 0;
+    bottom: 0;
+    border-left: 200px solid rgb(21, 182, 0,0);
+    
+    border-top: 250px solid #F1E2C3;
+  }
 }
 
 

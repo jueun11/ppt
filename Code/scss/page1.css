@@ -67,8 +67,28 @@ main {
 
 .box-bottom {
   transform: rotateX(-90deg) translateZ(400px);
-  width: 55vw;
   bottom: 0;
+}
+.box-bottom > div:nth-child(1) {
+  width: 25%;
+  height: 31%;
+  position: absolute;
+  z-index: 1;
+  bottom: 0;
+  border-style: solid;
+  -o-border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0, 0.2) 100%);
+     border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0, 0.2) 100%);
+  border-image-slice: 1;
+  border-image-width: 0px 0 250px 0;
+}
+.box-bottom > div:nth-child(2) {
+  width: 20%;
+  height: 31%;
+  position: absolute;
+  z-index: 2;
+  bottom: 0;
+  border-left: 200px solid rgba(21, 182, 0, 0);
+  border-top: 250px solid #F1E2C3;
 }
 
 #wall {
