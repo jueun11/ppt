@@ -3,7 +3,7 @@
   box-sizing: border-box;
 }
 body{
-  background-color: var(--color-3);
+  background: linear-gradient(to top, #fff4de, #f1e2c3);
   display: flex;
   flex-direction: row;
 }
@@ -80,11 +80,12 @@ body{
   }
   &>div:nth-child(2){
     height: 3.5vh;
-    background-color: var(--color-3);
+    background: linear-gradient(to top, #f0e2c2, #f2dfbd);
   }
   &>div:nth-child(3){
     height: 15vh;
     background-color: var(--color-2);
+    background: linear-gradient(to top, #f2af5e, #ec974d);
   }
 }
 

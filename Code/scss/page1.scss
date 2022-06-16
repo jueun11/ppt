@@ -60,10 +60,13 @@ main{
   // width: 30vw;
 
   right: 0;
+  border: 1px solid var(--color-5);
+
   // left: 70%;
 }
 .box-back{
-  background-color: var(--color-3);
+  // background-color: var(--color-3);
+  background: linear-gradient(to top, #faedcf, #f2dfbd);
   transform: rotateY(180deg) translateZ(400px) ;
   // width: 1600px;
   width: 55vw;
@@ -71,14 +74,13 @@ main{
   border: 1px solid var(--color-5);
   // height: 800px;
   // left: 800px;
-  
 }
 .box-left{
   background-color: var(--color-1);
   transform: rotateY(-90deg) translateZ(400px) ;
   // left: 800px;
   height: 55vh;
-  // width: 30vw;
+  border: 1px solid var(--color-5);
 }
 .box-top{
   // background-color: rgba(255, 0, 234, 0.7);
@@ -102,7 +104,8 @@ main{
   
     
     border-style: solid;
-    border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0,0.2) 100%);
+    border-image: linear-gradient(to top left, #fcf0d7
+     0%, rgba(0, 0, 0,0.2) 100%);
     border-image-slice: 1;
     border-image-width:00px 0 250px 0;
     // border-top: 250px solid #F1E2C3;
@@ -116,14 +119,14 @@ main{
     bottom: 0;
     border-left: 200px solid rgb(21, 182, 0,0);
     
-    border-top: 250px solid #F1E2C3;
+    border-top: 250px solid #fcf0d7;
   }
 }
 
 
 #wall{
   width: 40vw;
-  background-color: var(--color-3);
+  // background-color: var(--color-3);
   height: 55vh;
   border: 1px solid var(--color-5);
   margin-top: 25vh;

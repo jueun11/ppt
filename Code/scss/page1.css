@@ -44,10 +44,11 @@ main {
   transform: rotateY(90deg) translateZ(400px);
   height: 55vh;
   right: 0;
+  border: 1px solid var(--color-5);
 }
 
 .box-back {
-  background-color: var(--color-3);
+  background: linear-gradient(to top, #faedcf, #f2dfbd);
   transform: rotateY(180deg) translateZ(400px);
   width: 55vw;
   height: 55vh;
@@ -58,6 +59,7 @@ main {
   background-color: var(--color-1);
   transform: rotateY(-90deg) translateZ(400px);
   height: 55vh;
+  border: 1px solid var(--color-5);
 }
 
 .box-top {
@@ -76,8 +78,8 @@ main {
   z-index: 1;
   bottom: 0;
   border-style: solid;
-  -o-border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0, 0.2) 100%);
-     border-image: linear-gradient(to top left, #F1E2C3 0%, rgba(0, 0, 0, 0.2) 100%);
+  -o-border-image: linear-gradient(to top left, #fcf0d7 0%, rgba(0, 0, 0, 0.2) 100%);
+     border-image: linear-gradient(to top left, #fcf0d7 0%, rgba(0, 0, 0, 0.2) 100%);
   border-image-slice: 1;
   border-image-width: 0px 0 250px 0;
 }
@@ -88,12 +90,11 @@ main {
   z-index: 2;
   bottom: 0;
   border-left: 200px solid rgba(21, 182, 0, 0);
-  border-top: 250px solid #F1E2C3;
+  border-top: 250px solid #fcf0d7;
 }
 
 #wall {
   width: 40vw;
-  background-color: var(--color-3);
   height: 55vh;
   border: 1px solid var(--color-5);
   margin-top: 25vh;

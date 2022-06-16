@@ -40,27 +40,24 @@
       justify-content: space-around;
       align-items: center;
       &>li{
-        width: 20vw;
-        height: 45vh;
-        background-color: #D94B19;
-        padding: 2vh;
+        width: 18vw;
         display: flex;
         align-items: center;
         justify-content: center;
         position: relative;
         &>div:nth-child(1){
           width: 100%;
-          height: 100%;
-          background-color: #fff;
+          display: flex;
           position: relative;
+          box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
         }
         &>div:nth-child(2){
           position:absolute;
           z-index: 2;
           background-color: rgba(0, 0, 0, 0.5);
           backdrop-filter: blur(10px);
-          width: 90%;
-          height: 92%;
+          width: 85%;
+          height: 88%;
           display: none;
           align-items: center;
           justify-content: center;
@@ -117,41 +114,78 @@
   display: none;
   flex-direction: row;
   &>section:nth-child(1){
-    width: 20vw;
+    // width: 20vw;
     height: 45vh;
-    background-color: var(--color-1);
-    padding: 2vh;
+    // background-color: var(--color-1);
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    &>div:nth-child(1){
-      width: 100%;
+    &>img{
+      // width: 100%;
       height: 100%;
-      background-color: var(--color-6);
+      box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
+      
+    }
+    &>div{
+      position: absolute;
+      width: 85%;
+      height: 88.5%;
+      background-color: rgb(102, 255, 135);
     }
   }
   &>section:nth-child(2){
-    width: 50vw;
+    width: 40vw;
     height: 45vh;
-    // border: 1px solid red;
+    border: 1px solid red;
     margin-left: 5vw;
-    &>div:nth-child(1){
-      height: 15vh;
-      // border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: flex-end;
+    &>.bookshelf{
+      // border: 1px solid rgb(255, 255, 255);
       display: flex;
-      justify-content: end;
-      &>div{
-        width: 5vw;
-        height: 12vh;
-        background-color: var(--color-4);
-        transform: rotate(40deg);
-        margin-right: 5vw;
+      flex-direction: column;
+      align-items: center;
+      &>.books{
+        // border: 1px solid rgb(132, 255, 121);
+        display: flex;
+        &>div:nth-child(1){
+          width: 5vw;
+          margin-right: 3vw;
+          display: flex;
+          align-items: flex-end;
+          bottom: 0vh;
+          &>img{
+            width: 100%;
+          }
+        }
+        &>div:nth-child(2){
+          width: 5vw;
+          display: flex;
+          align-items: flex-end;
+          bottom: 0vh;
+          &>img{
+            // height: 100%;
+            width: 100%;
+          }
+        }
+      }
+      &>div:nth-child(2){
+        //선반
+        width: 24vw;
+        // border: 1px solid blue;
+        display: flex;
+        justify-content: flex-start;
+        &>img{
+          width: 100%;
+        }
       }
     }
     &>div:nth-child(2){
-      margin-top: 5vh;
-      width: 50vw;
+      margin-top: 3vh;
+      width: 40vw;
       height: 25vh;
       background-color: var(--color-6);
     }
@@ -159,13 +193,109 @@
 }
 
 #esc{
-  width: 7vh;
-  height: 7vh;
+  width: 8vh;
+  height: 4vh;
   background-color: var(--color-2);
   position: absolute;
-  top: 12vh;
-  right: 5vw;
+  bottom: 23vh;
+  right: 10vw;
 }
 #esc:hover{
   cursor: pointer;
+}
+
+
+.plans{
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0,0.5);
+  // display: flex;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  &>.planEsc{
+    width: 5vh;
+    height: 5vh;
+    border: 1px solid white;
+    position: absolute;
+    right: 21vw;
+    top: 12vh;
+  }
+  &>:nth-child(2){
+    height: 60vh;
+    border: 1px solid red;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    &>.planBox{
+      width: 43vw;
+      height: 60vh;
+      background-color: #fff;
+      margin-left: 1vw;
+      margin-right: 1vw;
+      display: flex;
+      &>.plan{
+        display: none;
+      }
+      &>.plan:nth-child(1){
+        &>div:nth-child(1){
+          width: 43vw;
+          height: 60vh;
+          background-color: red;
+          display: flex;
+          display: none;
+        }
+        &>div:nth-child(2){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(255, 166, 0);
+          display: none;
+        }
+        &>div:nth-child(3){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(229, 255, 0);
+          display: flex;
+          display: none;
+
+        }
+        &>div:nth-child(4){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(102, 255, 0);
+          display: flex;
+          display: none;
+
+        }
+        &>div:nth-child(5){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(0, 110, 255);
+          display: flex;
+          display: none;
+
+        }
+        &>div:nth-child(6){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(140, 0, 255);
+          display: flex;
+          display: none;
+        }
+      }
+    }
+    &>.planLBtn{
+      width: 5vh;
+      height: 5vh;
+      border: 1px solid white;
+    }
+    &>.planRBtn{
+      width: 5vh;
+      height: 5vh;
+      border: 1px solid white;
+    }
+  }
 }
