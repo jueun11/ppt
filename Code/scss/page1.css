@@ -44,7 +44,8 @@ main {
   transform: rotateY(90deg) translateZ(400px);
   height: 55vh;
   right: 0;
-  border: 1px solid var(--color-5);
+  border-top: 1px solid var(--color-5);
+  border-bottom: 1px solid var(--color-5);
 }
 
 .box-back {
@@ -53,6 +54,7 @@ main {
   width: 55vw;
   height: 55vh;
   border: 1px solid var(--color-5);
+  z-index: 1;
 }
 
 .box-left {
@@ -75,7 +77,7 @@ main {
   width: 25%;
   height: 31%;
   position: absolute;
-  z-index: 1;
+  z-index: 0;
   bottom: 0;
   border-style: solid;
   -o-border-image: linear-gradient(to top left, #fcf0d7 0%, rgba(0, 0, 0, 0.2) 100%);
@@ -85,9 +87,9 @@ main {
 }
 .box-bottom > div:nth-child(2) {
   width: 20%;
-  height: 31%;
+  height: 30%;
   position: absolute;
-  z-index: 2;
+  z-index: 1;
   bottom: 0;
   border-left: 200px solid rgba(21, 182, 0, 0);
   border-top: 250px solid #fcf0d7;
@@ -103,9 +105,30 @@ main {
   position: relative;
 }
 #wall > h1 {
-  font-size: 3rem;
+  font-size: 9vh;
   display: flex;
   display: flex;
-  margin-top: 30vh;
-  margin-left: 5vw;
+  position: absolute;
+  right: 5vw;
+  color: var(--textcolor-1);
+  font-weight: 100;
+  bottom: 14vh;
+}
+#wall > div:nth-child(2) {
+  width: 23vw;
+  height: 4vh;
+  background-color: var(--color-2);
+  position: absolute;
+  bottom: 16vh;
+  right: 4vw;
+  z-index: -1;
+}
+#wall > h2 {
+  color: var(--color-2);
+  position: absolute;
+  bottom: 13vh;
+  right: 6vw;
+  font-weight: 100;
+  font-size: 2vh;
+  font-family: "Roboto", sans-serif;
 }/*# sourceMappingURL=page1.css.map */

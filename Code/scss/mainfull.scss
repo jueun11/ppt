@@ -25,10 +25,12 @@ header{
     align-items: center;
     justify-content: space-between;
     &>#title{
-      font-size: 2rem;
+      height: 4vh;
       display: flex;
       align-items: center;
-      // border: 1px solid green;
+      &>img{
+        height: 100%;
+      }
     }
     &>#title:hover{
       cursor: pointer;

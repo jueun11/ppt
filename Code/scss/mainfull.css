@@ -27,9 +27,12 @@ header > nav {
   justify-content: space-between;
 }
 header > nav > #title {
-  font-size: 2rem;
+  height: 4vh;
   display: flex;
   align-items: center;
+}
+header > nav > #title > img {
+  height: 100%;
 }
 header > nav > #title:hover {
   cursor: pointer;

@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&family=Lusitana&family=Roboto&display=swap");
 :root {
   --color-1:#D94B19;
   --color-2:#F2AF5E;
@@ -5,4 +6,30 @@
   --color-4:#81A6C0;
   --color-5:#262626;
   --color-6:#fff;
+  --textcolor-1: #492105;
+}
+
+@font-face {
+  font-family: "GowunDodum-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2108@1.1/GowunDodum-Regular.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+h1 {
+  font-family: "Lusitana";
+}
+
+h2 {
+  font-family: "lora";
+}
+
+li {
+  font-family: "lora";
+}
+
+p {
+  font-family: "GowunDodum-Regular";
+  line-height: 3vh;
+  letter-spacing: -0.2px;
+  color: var(--textcolor-1);
 }/*# sourceMappingURL=form.css.map */
