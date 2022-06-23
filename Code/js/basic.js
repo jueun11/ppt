@@ -188,6 +188,12 @@ for(i=0; i < nav.length; i++){
 //todo 메뉴 클릭에 따른 좌표이동 
 //* this를 활용할 방법을 못찾았다. 메뉴는 많지 않으니 각 메뉴마다 이벤트를 넣는 방식을 선택
 title.addEventListener('click',function(){
+  //*nav색 조절
+  for(i=0; i < nav.length; i++){
+      nav.forEach(function(element){
+        element.style.color = "#262626";
+      });
+  }
   opacityValue = 1;
   page1.style.opacity = opacityValue;
   //*팝업창 닫기
@@ -312,10 +318,14 @@ nav[2].addEventListener('click',function(){
     if(offset < page4leftOffset){
       offset = offset+50;
       root.style.transform = `translateX(-${offset}px`;
+      if(offset > page4leftOffset){
+      root.style.transform = `translateX(-${page4leftOffset}px`;
+      //넘치지않게, 넘쳣을경우 꽉차게 만들기
+      }
     } else{
       clearInterval(fadeInleft);
     }
-  },0.1);
+  },0.01);
 
     //*계단 사라짐
     let fadeInfloor = setInterval(function(){
