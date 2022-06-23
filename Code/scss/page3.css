@@ -73,7 +73,6 @@
 #page3 > section:nth-child(1) > ul > li > div:nth-child(3) {
   position: absolute;
   z-index: 1;
-  background-color: rgb(255, 28, 28);
   width: 85.5%;
   height: 89%;
   display: block;
@@ -144,7 +143,6 @@
 .popup > section:nth-child(2) {
   width: 40vw;
   height: 45vh;
-  border: 1px solid red;
   margin-left: 5vw;
   display: flex;
   flex-direction: column;
@@ -189,17 +187,29 @@
 .popup > section:nth-child(2) > div:nth-child(2) {
   margin-top: 3vh;
   width: 40vw;
-  height: 25vh;
-  background-color: var(--color-6);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > img {
+  width: 100%;
+  filter: drop-shadow(3px 3px 0px rgba(99, 40, 0, 0.6));
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 35vw;
+  height: 18vh;
+  border: 1px solid black;
+  position: absolute;
 }
 
 #esc {
-  width: 8vh;
-  height: 4vh;
-  background-color: var(--color-2);
+  width: 10vh;
   position: absolute;
   bottom: 23vh;
   right: 10vw;
+}
+#esc > img {
+  width: 100%;
 }
 
 #esc:hover {
@@ -293,4 +303,22 @@
   width: 5vh;
   height: 5vh;
   border: 1px solid white;
+}
+
+.codeBook {
+  transition: 0.2s;
+}
+
+.codeBook:hover {
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.planBook {
+  transition: 0.2s;
+}
+
+.planBook:hover {
+  cursor: pointer;
+  margin-bottom: 1vh;
 }/*# sourceMappingURL=page3.css.map */
