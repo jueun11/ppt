@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #page3 {
   width: 150vw;
   height: 100vh;
@@ -197,9 +198,28 @@
 }
 .popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
   width: 35vw;
-  height: 18vh;
-  border: 1px solid black;
+  height: 20vh;
   position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > h1 {
+  color: var(--textcolor-1);
+  font-family: "GowunDodum-Regular";
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 1vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  font-size: 0.9rem;
+  margin-top: -0.5vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 1vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2) {
+  line-height: 2.5vh;
+  font-size: 0.9rem;
 }
 
 #esc {
@@ -209,13 +229,27 @@
   right: 10vw;
 }
 #esc > img {
+  -webkit-animation: 1.5s contrast infinite;
+          animation: 1.5s contrast infinite;
   width: 100%;
 }
 
 #esc:hover {
   cursor: pointer;
+  filter: contrast(200%);
 }
 
+@-webkit-keyframes contrast {
+  20% {
+    filter: contrast(200%);
+  }
+}
+
+@keyframes contrast {
+  20% {
+    filter: contrast(200%);
+  }
+}
 .plans {
   width: 100vw;
   height: 100vh;
@@ -227,16 +261,23 @@
   justify-content: center;
 }
 .plans > .planEsc {
-  width: 5vh;
-  height: 5vh;
-  border: 1px solid white;
   position: absolute;
-  right: 21vw;
-  top: 12vh;
+  right: 25vw;
+  top: 10vh;
+  display: inline-block;
+  display: inline;
+}
+.plans > .planEsc::after {
+  display: inline-block;
+  content: "×";
+  font-size: 4rem;
+  color: var(--color-6);
+}
+.plans .planEsc:hover {
+  cursor: pointer;
 }
 .plans > :nth-child(2) {
   height: 60vh;
-  border: 1px solid red;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -253,15 +294,81 @@
 .plans > :nth-child(2) > .planBox > .plan {
   display: none;
 }
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(1) {
+  width: 43vw;
+  height: 60vh;
+  background-color: red;
+  display: flex;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) {
+  width: 43vw;
+  height: 60vh;
+  background-color: rgb(255, 166, 0);
+  display: none;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) {
+  width: 43vw;
+  height: 60vh;
+  background-color: rgb(229, 255, 0);
+  display: flex;
+  display: none;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) {
+  width: 43vw;
+  height: 60vh;
+  background-color: rgb(102, 255, 0);
+  display: flex;
+  display: none;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) {
+  width: 43vw;
+  height: 60vh;
+  background-color: rgb(0, 110, 255);
+  display: flex;
+  display: none;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) {
+  width: 43vw;
+  height: 60vh;
+  background-color: rgb(140, 0, 255);
+  display: flex;
+  display: none;
+}
 .plans > :nth-child(2) > .planLBtn {
   width: 5vh;
   height: 5vh;
-  border: 1px solid white;
+  position: relative;
+}
+.plans > :nth-child(2) > .planLBtn {
+  left: 0;
+  top: 0;
+  content: "";
+  width: 3vh;
+  height: 3vh;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(225deg);
 }
 .plans > :nth-child(2) > .planRBtn {
   width: 5vh;
   height: 5vh;
-  border: 1px solid white;
+  position: relative;
+}
+.plans > :nth-child(2) > .planRBtn {
+  left: 0;
+  top: 0;
+  content: "";
+  width: 3vh;
+  height: 3vh;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+.plans > :nth-child(2) > .planLBtn:hover {
+  cursor: pointer;
+}
+.plans > :nth-child(2) > .planRBtn:hover {
+  cursor: pointer;
 }
 
 .codeBook {
@@ -280,4 +387,8 @@
 .planBook:hover {
   cursor: pointer;
   margin-bottom: 1vh;
+}
+
+.gowun {
+  font-family: "GowunDodum-Regular";
 }/*# sourceMappingURL=page3.css.map */

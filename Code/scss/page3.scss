@@ -214,9 +214,38 @@
       }
       &>div:nth-child(2){
         width: 35vw;
-        height: 18vh;
-        border: 1px solid black;
+        height: 20vh;
+        // border: 1px solid rgb(255, 31, 31);
         position: absolute;
+        display: flex;
+        flex-direction: column;
+        //텍스트 박스
+        &>h1{
+          // border: 1px solid blue;
+          color: var(--textcolor-1);
+          font-family: 'GowunDodum-Regular';
+        }
+        &>div:nth-child(2){
+          // border: 1px solid blue;
+          margin-top: 1vh;
+          &>p:nth-child(1){
+          }
+          &>p:nth-child(2){
+            font-size: 0.9rem;
+            margin-top: -0.5vh;
+          }
+        }
+        &>div:nth-child(3){
+          // border: 1px solid blue;
+          margin-top: 1vh;
+          &>p:nth-child(1){
+          }
+          &>p:nth-child(2){
+          line-height: 2.5vh;
+            
+            font-size: 0.9rem;
+          }
+        }
       }
     }
   }
@@ -229,12 +258,28 @@
   position: absolute;
   bottom: 23vh;
   right: 10vw;
+  
   &>img{
+    animation: 1.5s contrast infinite;
     width: 100%;
   }
 }
 #esc:hover{
   cursor: pointer;
+  filter: contrast(200%);
+
+}
+
+@keyframes contrast{
+  0%{
+    // filter: contrast(0%);
+  }
+  20%{
+    filter: contrast(200%);
+  }
+  50%{
+    // filter: contrast(0%);
+  }
 }
 
 
@@ -249,16 +294,25 @@
   align-items: center;
   justify-content: center;
   &>.planEsc{
-    width: 5vh;
-    height: 5vh;
-    border: 1px solid white;
+    // border: 1px solid red;
     position: absolute;
-    right: 21vw;
-    top: 12vh;
+    right: 25vw;
+    top: 10vh;
+    display: inline-block;
+    display: inline;
+  }
+  &>.planEsc::after{
+    display: inline-block;
+    content: "\00d7"; 
+    font-size:4rem;
+    color: var(--color-6);
+  }
+  .planEsc:hover{
+    cursor: pointer;
   }
   &>:nth-child(2){
     height: 60vh;
-    border: 1px solid red;
+    // border: 1px solid red;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -275,61 +329,87 @@
       }
       &>.plan:nth-child(1){
 
-        // &>div:nth-child(1){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: red;
-        //   display: flex;
-        //   display: none;
-        // }
-        // &>div:nth-child(2){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: rgb(255, 166, 0);
-        //   display: none;
-        // }
-        // &>div:nth-child(3){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: rgb(229, 255, 0);
-        //   display: flex;
-        //   display: none;
+        &>div:nth-child(1){
+          width: 43vw;
+          height: 60vh;
+          background-color: red;
+          display: flex;
+          // display: none;
+        }
+        &>div:nth-child(2){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(255, 166, 0);
+          display: none;
+        }
+        &>div:nth-child(3){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(229, 255, 0);
+          display: flex;
+          display: none;
 
-        // }
-        // &>div:nth-child(4){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: rgb(102, 255, 0);
-        //   display: flex;
-        //   display: none;
+        }
+        &>div:nth-child(4){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(102, 255, 0);
+          display: flex;
+          display: none;
 
-        // }
-        // &>div:nth-child(5){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: rgb(0, 110, 255);
-        //   display: flex;
-        //   display: none;
+        }
+        &>div:nth-child(5){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(0, 110, 255);
+          display: flex;
+          display: none;
 
-        // }
-        // &>div:nth-child(6){
-        //   width: 43vw;
-        //   height: 60vh;
-        //   background-color: rgb(140, 0, 255);
-        //   display: flex;
-        //   display: none;
-        // }
+        }
+        &>div:nth-child(6){
+          width: 43vw;
+          height: 60vh;
+          background-color: rgb(140, 0, 255);
+          display: flex;
+          display: none;
+        }
       }
     }
     &>.planLBtn{
       width: 5vh;
       height: 5vh;
-      border: 1px solid white;
+      position: relative;
+    }
+    &>.planLBtn{
+      left: 0;
+      top: 0;
+      content: '';
+      width: 3vh;
+      height: 3vh;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(225deg);
     }
     &>.planRBtn{
       width: 5vh;
       height: 5vh;
-      border: 1px solid white;
+      position: relative;
+    }
+    &>.planRBtn{
+      left: 0;
+      top: 0;
+      content: '';
+      width: 3vh;
+      height: 3vh;
+      border-top: 3px solid #fff;
+      border-right: 3px solid #fff;
+      transform: rotate(45deg);
+    }
+    &>.planLBtn:hover{
+      cursor: pointer;
+    }
+    &>.planRBtn:hover{
+      cursor: pointer;
     }
   }
 }
@@ -346,4 +426,9 @@
 .planBook:hover{
   cursor: pointer;
   margin-bottom: 1vh;
+}
+
+
+.gowun{
+  font-family: 'GowunDodum-Regular';
 }

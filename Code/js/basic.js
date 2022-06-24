@@ -343,4 +343,4 @@ nav[2].addEventListener('click',function(){
 
 
 
-
+export{nav, title};

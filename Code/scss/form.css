@@ -32,4 +32,8 @@ p {
   line-height: 3vh;
   letter-spacing: -0.2px;
   color: var(--textcolor-1);
+}
+
+.gowun {
+  font-family: "GowunDodum-Regular";
 }/*# sourceMappingURL=form.css.map */
