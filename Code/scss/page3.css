@@ -1,3 +1,4 @@
+@charset "UTF-8";
 #page3 {
   width: 150vw;
   height: 100vh;
@@ -13,129 +14,78 @@
   flex-direction: row;
 }
 #page3 > section:nth-child(1) > div:nth-child(1) {
-  width: 40vw;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
   margin-left: 10vw;
 }
 #page3 > section:nth-child(1) > div:nth-child(1) > h1 {
-  font-size: 3rem;
+  font-size: 4rem;
   margin-bottom: 2vh;
+  color: var(--textcolor-1);
+  font-weight: 200;
 }
 #page3 > section:nth-child(1) > div:nth-child(1) > p {
-  font-size: 0.8rem;
+  font-size: 1rem;
   text-align: justify;
 }
 #page3 > section:nth-child(1) > ul {
   width: 100vw;
-  margin-left: 10vw;
+  margin-left: 5vw;
   display: flex;
   justify-content: space-around;
   align-items: center;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(1) {
-  width: 20vw;
-  height: 45vh;
-  background-color: #D94B19;
-  padding: 2vh;
+#page3 > section:nth-child(1) > ul > li {
+  width: 18vw;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(1) > div:nth-child(1) {
+#page3 > section:nth-child(1) > ul > li > div:nth-child(1) {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
-  position: relative;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(1) > div:nth-child(2) {
-  position: absolute;
-  z-index: 2;
-  background-color: rgba(128, 128, 128, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  width: 90%;
-  height: 92%;
-  display: none;
-  align-items: center;
-  justify-content: center;
-  flex-direction: column;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(1) > div:nth-child(2) > h1 {
-  color: #fff;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(1) > div:nth-child(2) > p {
-  color: #fff;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(2) {
-  width: 20vw;
-  height: 45vh;
-  background-color: #ccd919;
-  padding: 2vh;
   display: flex;
-  align-items: center;
-  justify-content: center;
   position: relative;
+  box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(2) > div:nth-child(1) {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(2) > div:nth-child(2) {
+#page3 > section:nth-child(1) > ul > li > div:nth-child(2) {
   position: absolute;
   z-index: 2;
-  background-color: rgba(128, 128, 128, 0.7);
+  background-color: rgba(0, 0, 0, 0.5);
   -webkit-backdrop-filter: blur(10px);
           backdrop-filter: blur(10px);
-  width: 90%;
-  height: 92%;
+  width: 85.5%;
+  height: 89%;
   display: none;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(2) > div:nth-child(2) > h1 {
-  color: #fff;
+#page3 > section:nth-child(1) > ul > li > div:nth-child(2) > h1 {
+  color: var(--color-6);
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(2) > div:nth-child(2) > p {
-  color: #fff;
+#page3 > section:nth-child(1) > ul > li > div:nth-child(2) > p {
+  margin-top: 2vh;
+  color: var(--color-6);
+  text-align: center;
+  font-size: 2vh;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(3) {
-  width: 20vw;
-  height: 45vh;
-  background-color: #1993d9;
-  padding: 2vh;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  position: relative;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(3) > div:nth-child(1) {
-  width: 100%;
-  height: 100%;
-  background-color: #fff;
-}
-#page3 > section:nth-child(1) > ul > li:nth-child(3) > div:nth-child(2) {
+#page3 > section:nth-child(1) > ul > li > div:nth-child(3) {
   position: absolute;
-  z-index: 2;
-  background-color: rgba(128, 128, 128, 0.7);
-  -webkit-backdrop-filter: blur(10px);
-          backdrop-filter: blur(10px);
-  width: 90%;
-  height: 92%;
-  display: none;
+  z-index: 1;
+  width: 85.5%;
+  height: 89%;
+  display: block;
   align-items: center;
   justify-content: center;
   flex-direction: column;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(3) > div:nth-child(2) > h1 {
-  color: #fff;
+#page3 > section:nth-child(1) > ul > li > div:nth-child(3) > img {
+  width: 100%;
 }
-#page3 > section:nth-child(1) > ul > li:nth-child(3) > div:nth-child(2) > p {
-  color: #fff;
+#page3 > section:nth-child(1) > ul > li:hover {
+  cursor: pointer;
 }
 #page3 > section:nth-child(2) {
   height: 0vh;
@@ -146,15 +96,15 @@
 }
 #page3 > section:nth-child(2) > div:nth-child(1) {
   height: 1.5vh;
-  background-color: #fff;
+  background-color: var(--color-6);
 }
 #page3 > section:nth-child(2) > div:nth-child(2) {
   height: 3.5vh;
-  background-color: #F1E2C3;
+  background-color: var(--color-3);
 }
 #page3 > section:nth-child(2) > div:nth-child(3) {
   height: 15vh;
-  background-color: #F2AF5E;
+  background-color: var(--color-2);
   bottom: 0;
 }
 
@@ -162,7 +112,6 @@
   display: none;
   width: 100vw;
   height: 100vh;
-  border: 1px solid red;
   position: absolute;
   z-index: 3;
   align-items: center;
@@ -176,55 +125,743 @@
   flex-direction: row;
 }
 .popup > section:nth-child(1) {
-  width: 20vw;
   height: 45vh;
-  background-color: #D94B19;
-  padding: 2vh;
   display: flex;
   align-items: center;
   justify-content: center;
   position: relative;
 }
-.popup > section:nth-child(1) > div:nth-child(1) {
-  width: 100%;
+.popup > section:nth-child(1) > img {
   height: 100%;
-  background-color: #fff;
+  box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
+}
+.popup > section:nth-child(1) > div {
+  position: absolute;
+  width: 85%;
+  height: 88.5%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup > section:nth-child(1) > div > img {
+  height: 100%;
 }
 .popup > section:nth-child(2) {
-  width: 50vw;
+  width: 40vw;
   height: 45vh;
-  border: 1px solid red;
   margin-left: 5vw;
-}
-.popup > section:nth-child(2) > div:nth-child(1) {
-  height: 15vh;
-  border: 1px solid black;
   display: flex;
-  justify-content: end;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: flex-end;
 }
-.popup > section:nth-child(2) > div:nth-child(1) > div {
+.popup > section:nth-child(2) > .bookshelf {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.popup > section:nth-child(2) > .bookshelf > .books {
+  display: flex;
+}
+.popup > section:nth-child(2) > .bookshelf > .books > div:nth-child(1) {
   width: 5vw;
-  height: 12vh;
-  background-color: #81A6C0;
-  transform: rotate(40deg);
-  margin-right: 5vw;
+  margin-right: 3vw;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0vh;
+}
+.popup > section:nth-child(2) > .bookshelf > .books > div:nth-child(1) > img {
+  width: 100%;
+}
+.popup > section:nth-child(2) > .bookshelf > .books > div:nth-child(2) {
+  width: 5vw;
+  display: flex;
+  align-items: flex-end;
+  bottom: 0vh;
+}
+.popup > section:nth-child(2) > .bookshelf > .books > div:nth-child(2) > img {
+  width: 100%;
+}
+.popup > section:nth-child(2) > .bookshelf > div:nth-child(2) {
+  width: 24vw;
+  display: flex;
+  justify-content: flex-start;
+}
+.popup > section:nth-child(2) > .bookshelf > div:nth-child(2) > img {
+  width: 100%;
 }
 .popup > section:nth-child(2) > div:nth-child(2) {
-  margin-top: 5vh;
-  width: 50vw;
-  height: 25vh;
-  background-color: #fff;
+  margin-top: 3vh;
+  width: 40vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > img {
+  width: 100%;
+  filter: drop-shadow(3px 3px 0px rgba(99, 40, 0, 0.4));
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 35vw;
+  height: 20vh;
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > h1 {
+  color: var(--textcolor-1);
+  font-family: "GowunDodum-Regular";
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 1vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  font-size: 0.9rem;
+  margin-top: -0.5vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 1vh;
+}
+.popup > section:nth-child(2) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2) {
+  line-height: 2.5vh;
+  font-size: 0.9rem;
 }
 
 #esc {
-  width: 7vh;
-  height: 7vh;
-  background-color: #F2AF5E;
+  width: 10vh;
   position: absolute;
-  top: 12vh;
-  right: 5vw;
+  bottom: 23vh;
+  right: 10vw;
+}
+#esc > img {
+  -webkit-animation: 1.5s contrast infinite;
+          animation: 1.5s contrast infinite;
+  width: 100%;
 }
 
 #esc:hover {
   cursor: pointer;
+  filter: contrast(200%);
+}
+
+@-webkit-keyframes contrast {
+  20% {
+    filter: contrast(200%);
+  }
+}
+
+@keyframes contrast {
+  20% {
+    filter: contrast(200%);
+  }
+}
+.plans {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 5;
+  background-color: rgba(0, 0, 0, 0.5);
+  display: none;
+  align-items: center;
+  justify-content: center;
+}
+.plans > .planEsc {
+  position: absolute;
+  right: 25vw;
+  top: 10vh;
+  display: inline-block;
+  display: inline;
+}
+.plans > .planEsc::after {
+  display: inline-block;
+  content: "×";
+  font-size: 4rem;
+  color: var(--color-6);
+}
+.plans .planEsc:hover {
+  cursor: pointer;
+}
+.plans > :nth-child(2) {
+  height: 60vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox {
+  width: 43vw;
+  height: 60vh;
+  background-color: #fff;
+  margin-left: 1vw;
+  margin-right: 1vw;
+  display: flex;
+}
+.plans > :nth-child(2) > .planBox > .plan {
+  display: none;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) {
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(1) {
+  display: flex;
+  border-bottom: 30vh solid #A68A7C;
+  border-top: 30vh solid transparent;
+  border-left: 21.5vw solid transparent;
+  border-right: 21.5vw solid #A68A7C;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(1) > h1 {
+  position: absolute;
+  left: 32vw;
+  top: 25vh;
+  font-size: 1.8rem;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(1) > h1 > span {
+  font-size: 1.6rem;
+  border-bottom: 1px solid black;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) {
+  width: 43vw;
+  height: 60vh;
+  display: none;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > h1 {
+  margin-left: 5vh;
+  margin-top: 5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: 15vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 1px;
+  height: 100%;
+  background-color: #81A6C0;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
+  width: 1.2vh;
+  height: 1.2vh;
+  background-color: #81A6C0;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  margin-top: 2.5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  margin-top: 8vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+  margin-top: 24.2vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width: 13vw;
+  height: 100%;
+  margin-left: 2vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  margin-top: 2vh;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 3vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p {
+  color: #1B4158;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 3vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background-color: rgb(255, 166, 0);
+  background-image: url(/image/plan/project1/light_1.jpg);
+  background-size: cover;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  background-color: #A68A7C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(1) {
+  width: 15vh;
+  height: 15vh;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(2) > div:nth-child(2) {
+  width: 35vh;
+  height: 35vh;
+  border: 1px solid #fff;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: 3vw;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(3) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(1) > h3 {
+  width: 12vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  background-color: #A68A7C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(2) > div > p {
+  color: #fff;
+  margin-top: 1vh;
+  text-align: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(4) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  background-color: #A68A7C;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > h3 {
+  font-size: 1.2rem;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(2) {
+  margin: 5vh;
+  margin-right: 17vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) {
+  font-size: 1.2rem;
+  display: flex;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div {
+  width: 15vh;
+  height: 15vh;
+  border: 1px solid white;
+  border-radius: 50%;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+  position: absolute;
+  top: 44vh;
+  left: 53.2vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  position: absolute;
+  top: 57vh;
+  left: 49.5vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) {
+  position: absolute;
+  top: 57vh;
+  left: 57vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(5) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: #A68A7C;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > p {
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > p:nth-child(1) {
+  position: relative;
+  top: -5vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > p:nth-child(2) {
+  position: relative;
+  top: -7vh;
+  left: 3vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > p:nth-child(3) {
+  position: relative;
+  top: 4vh;
+  left: -3vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(1) > p:nth-child(4) {
+  position: relative;
+  top: 7vh;
+  left: -1vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {
+  width: 1px;
+  height: 30vh;
+  background-color: #fff;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > p {
+  color: #fff;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > p:nth-child(1) {
+  position: relative;
+  top: -2vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > p:nth-child(2) {
+  position: relative;
+  top: -5vh;
+  left: 3vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(2) > div:nth-child(3) > p:nth-child(3) {
+  position: relative;
+  top: 7vh;
+  left: -3vw;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(6) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #fff;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #fff;
+  color: #1B4158;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81A6C0;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(2) > img {
+  height: 100%;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(7) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(8) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(8) > div:nth-child(1) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81A6C0;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(8) > div:nth-child(1) > img {
+  width: 110%;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(8) > div:nth-child(2) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.plans > :nth-child(2) > .planBox > .plan:nth-child(1) > div:nth-child(8) > div:nth-child(2) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.plans > :nth-child(2) > .planLBtn {
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+}
+.plans > :nth-child(2) > .planLBtn {
+  left: 0;
+  top: 0;
+  content: "";
+  width: 3vh;
+  height: 3vh;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(225deg);
+}
+.plans > :nth-child(2) > .planRBtn {
+  width: 5vh;
+  height: 5vh;
+  position: relative;
+}
+.plans > :nth-child(2) > .planRBtn {
+  left: 0;
+  top: 0;
+  content: "";
+  width: 3vh;
+  height: 3vh;
+  border-top: 3px solid #fff;
+  border-right: 3px solid #fff;
+  transform: rotate(45deg);
+}
+.plans > :nth-child(2) > .planLBtn:hover {
+  cursor: pointer;
+}
+.plans > :nth-child(2) > .planRBtn:hover {
+  cursor: pointer;
+}
+
+.codeBook {
+  transition: 0.2s;
+}
+
+.codeBook:hover {
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.planBook {
+  transition: 0.2s;
+}
+
+.planBook:hover {
+  cursor: pointer;
+  margin-bottom: 1vh;
+}
+
+.gowun {
+  font-family: "GowunDodum-Regular";
 }/*# sourceMappingURL=page3.css.map */

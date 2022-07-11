@@ -20,7 +20,7 @@
     &>div{
       width: 20vw;
       height: 20vh;
-      margin-left: 15vw;
+      margin-left: 18vw;
       // border: 1px solid red;
       display: flex;
       flex-direction: column;
@@ -31,24 +31,26 @@
         background-color: #F2AF5E;
       }
       &>#lightbody{
-        width: 0;
-        height: 0;
+        // width: 8vw;
+        height: 7vh;
         position: relative;
-        top: -2vh;
-        border-bottom: 50px solid#F2AF5E;
+        top: -5vh;
         // border-top: 50px solid transparent;
-        border-left: 70px solid transparent;
-        border-right: 70px solid transparent;
+        // border: 1px solid red;
+        &>img{
+          height: 100%;
+        }
       }
       &>#light{
         width: 40vw;
-        height: 50vh;
+        height: 60vh;
         // border: 1px solid red;
         position: absolute;
-        top: 20vh;
+        z-index: -1;
+        top: 17vh;
         border-radius: 50vh 50vh 0px 0px;
         background: radial-gradient(at 50% 0%
-        , rgba(255,255,255,0.5),rgba(255,255,255,0));
+        , rgba(255,255,255,0.4),rgba(255,255,255,0));
         transition: 1s;
       }
     }
@@ -58,30 +60,55 @@
     height: 50vh;
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    // justify-content: center;
     align-items: center;
-    padding-left: 15vw;
-    padding-right: 15vw;
-    justify-content: space-between;
+    padding-left: 20vw;
+    padding-right: 20vw;
+    // justify-content: space-between;
     &>div:nth-child(1){
       width: 20vw;
-      height: 45vh;
-      background-color: #D94B19;
-      padding: 2vh;
-      &>div{
+      // height: 45vh;
+      // background-color: #D94B19;
+      &>img{
         width: 100%;
-        height: 100%;
-        background-color: #fff;
+        // height: 100%;
+        box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
       }
     }
     &>div:nth-child(2){
       // border: 1px solid blue;
-      width: 45vw;
-      &>h1{
-
+      width: 35vw;
+      margin-left: 10vw;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &>div:nth-child(1){
+        width: 35vw;
+        height: 3vh;
+        display: flex;
+        justify-content: flex-start;
+        &>img{
+          height: 100%;
+        }
       }
       &>p{
+        width: 32vw;
         margin-top: 3vh;
+        font-size: 1rem;
+      }
+      &>p:nth-child(2){
+        z-index: 2;
+      }
+      &>div:nth-child(4){
+        margin-top: 3vh;
+        width: 35vw;
+        height: 3vh;
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-end;
+        &>img{
+          height: 100%;
+        }
       }
     }
   }

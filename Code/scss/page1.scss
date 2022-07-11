@@ -5,6 +5,7 @@ main{
 
 #page1{
   overflow: hidden;
+
 }
 
 
@@ -53,31 +54,35 @@ main{
   // height:55vh;
 }
 .box-right{
-  background-color: rgb(255, 0, 157);
+  background-color: var(--color-2);
   transform: rotateY(90deg) translateZ(400px) ;
   height: 55vh;
   // width: 30vw;
 
   right: 0;
+  border-top: 1px solid var(--color-5);
+  border-bottom: 1px solid var(--color-5);
+
   // left: 70%;
 }
 .box-back{
-  background-color: rgba(7, 7, 7, 1);
+  // background-color: var(--color-3);
+  background: linear-gradient(to top, #faedcf, #f2dfbd);
   transform: rotateY(180deg) translateZ(400px) ;
   // width: 1600px;
   width: 55vw;
   height: 55vh;
-  border: 1px solid #272727;
+  border: 1px solid var(--color-5);
+  z-index: 1;
   // height: 800px;
   // left: 800px;
-  
 }
 .box-left{
-  background-color: #D94B19;
+  background-color: var(--color-1);
   transform: rotateY(-90deg) translateZ(400px) ;
   // left: 800px;
   height: 55vh;
-  // width: 30vw;
+  border: 1px solid var(--color-5);
 }
 .box-top{
   // background-color: rgba(255, 0, 234, 0.7);
@@ -87,30 +92,76 @@ main{
   // height: 800px;
 }
 .box-bottom{
-  // background-color: rgba(0, 255, 234, 0.7);
+  // background: linear-gradient(250deg,#F1E2C3 80%,rgba(0,0,0,0.2));
   transform: rotateX(-90deg) translateZ(400px) ;
   // width: 1600px;
-  width: 55vw;
-  // height: 800px;
   bottom: 0;
+  &>div:nth-child(1){
+    width: 25%;
+    height: 31%;
+    position: absolute;
+    z-index: 0;
+    // top: 0;
+    bottom: 0;
+    border-style: solid;
+
+    border-image: linear-gradient(to top left, #fcf0d7
+     0%, rgba(0, 0, 0,0.2) 100%);
+    border-image-slice: 1;
+    border-image-width:00px 0 250px 0;
+
+  }
+  &>div:nth-child(2){
+    width: 20%;
+    height: 30%;
+    position: absolute;
+    z-index: 1;
+    // top: 0;
+    bottom: 0;
+    border-left: 200px solid rgb(21, 182, 0,0);
+    border-top: 250px solid #fcf0d7;
+  }
 }
 
 
 #wall{
   width: 40vw;
-  background-color: #F1E2C3;
+  // background-color: var(--color-3);
   height: 55vh;
-  border: 1px solid black;
+  border: 1px solid var(--color-5);
   margin-top: 25vh;
   z-index: 1;
   display: flex;
   position: relative;
   &>h1{
-    font-size: 3rem;
+    font-size: 9vh;
     display: flex;
     // border: 1px solid red;
     display: flex;
-    margin-top: 30vh;
-    margin-left: 5vw;
+    position: absolute;
+    right: 5vw;
+    color: var(--textcolor-1);
+    font-weight: 100;
+    bottom: 14vh;
+  }
+  &>div:nth-child(2){
+    width: 23vw;
+    height: 4vh;
+    background-color: var(--color-2);
+    position: absolute;
+    bottom: 16vh;
+    right: 4vw;
+
+    z-index: -1;
+
+  }
+  &>h2{
+    color: var(--color-2);
+    position: absolute;
+    bottom: 13vh;
+    right: 6vw;
+    font-weight: 100;
+    font-size: 2vh;
+    font-family: 'Roboto', sans-serif;
   }
 }

@@ -17,7 +17,7 @@
 #page2 > section:nth-child(1) > div {
   width: 20vw;
   height: 20vh;
-  margin-left: 15vw;
+  margin-left: 18vw;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -28,47 +28,70 @@
   background-color: #F2AF5E;
 }
 #page2 > section:nth-child(1) > div > #lightbody {
-  width: 0;
-  height: 0;
+  height: 7vh;
   position: relative;
-  top: -2vh;
-  border-bottom: 50px solid #F2AF5E;
-  border-left: 70px solid transparent;
-  border-right: 70px solid transparent;
+  top: -5vh;
+}
+#page2 > section:nth-child(1) > div > #lightbody > img {
+  height: 100%;
 }
 #page2 > section:nth-child(1) > div > #light {
   width: 40vw;
-  height: 50vh;
+  height: 60vh;
   position: absolute;
-  top: 20vh;
+  z-index: -1;
+  top: 17vh;
   border-radius: 50vh 50vh 0px 0px;
-  background: radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.5), rgba(255, 255, 255, 0));
+  background: radial-gradient(at 50% 0%, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0));
   transition: 1s;
 }
 #page2 > section:nth-child(2) {
   height: 50vh;
   display: flex;
   flex-direction: row;
-  justify-content: center;
   align-items: center;
-  padding-left: 15vw;
-  padding-right: 15vw;
-  justify-content: space-between;
+  padding-left: 20vw;
+  padding-right: 20vw;
 }
 #page2 > section:nth-child(2) > div:nth-child(1) {
   width: 20vw;
-  height: 45vh;
-  background-color: #D94B19;
-  padding: 2vh;
 }
-#page2 > section:nth-child(2) > div:nth-child(1) > div {
+#page2 > section:nth-child(2) > div:nth-child(1) > img {
   width: 100%;
-  height: 100%;
-  background-color: #fff;
+  box-shadow: 10px 10px 0px 0px rgba(99, 40, 0, 0.5);
 }
 #page2 > section:nth-child(2) > div:nth-child(2) {
-  width: 45vw;
+  width: 35vw;
+  margin-left: 10vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#page2 > section:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 35vw;
+  height: 3vh;
+  display: flex;
+  justify-content: flex-start;
+}
+#page2 > section:nth-child(2) > div:nth-child(2) > div:nth-child(1) > img {
+  height: 100%;
 }
 #page2 > section:nth-child(2) > div:nth-child(2) > p {
+  width: 32vw;
   margin-top: 3vh;
+  font-size: 1rem;
+}
+#page2 > section:nth-child(2) > div:nth-child(2) > p:nth-child(2) {
+  z-index: 2;
+}
+#page2 > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) {
+  margin-top: 3vh;
+  width: 35vw;
+  height: 3vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+}
+#page2 > section:nth-child(2) > div:nth-child(2) > div:nth-child(4) > img {
+  height: 100%;
 }/*# sourceMappingURL=page2.css.map */

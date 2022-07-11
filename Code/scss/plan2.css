@@ -1,0 +1,509 @@
+.planBox > div:nth-child(2) > div:nth-child(1) {
+  display: flex;
+  border-bottom: 30vh solid #DC0D28;
+  border-top: 30vh solid transparent;
+  border-left: 21.5vw solid transparent;
+  border-right: 21.5vw solid #DC0D28;
+}
+.planBox > div:nth-child(2) > div:nth-child(1) > h1 {
+  position: absolute;
+  left: 32vw;
+  top: 25vh;
+  font-size: 1.8rem;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(1) > h1 > span {
+  font-size: 1.6rem;
+  border-bottom: 1px solid #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) {
+  width: 43vw;
+  height: 60vh;
+  display: none;
+  flex-direction: row;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  width: 50%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > h1 {
+  margin-left: 5vh;
+  margin-top: 5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  margin-top: 5vh;
+  margin-left: 5vw;
+  width: 15vw;
+  height: 40vh;
+  display: flex;
+  flex-direction: row;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) {
+  width: 1px;
+  height: 100%;
+  background-color: #47D184;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  z-index: 2;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div {
+  width: 1.2vh;
+  height: 1.2vh;
+  background-color: #47D184;
+  border-radius: 50%;
+  position: absolute;
+  z-index: 3;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(1) {
+  margin-top: 2.5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) {
+  margin-top: 8vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(1) > div:nth-child(3) {
+  margin-top: 24.2vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) {
+  width: 13vw;
+  height: 100%;
+  margin-left: 2vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) {
+  margin-top: 2vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  margin-top: 3vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) > p {
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) {
+  margin-top: 3vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(1) > div:nth-child(2) > div:nth-child(2) > div:nth-child(3) > p {
+  margin-left: 1vw;
+  margin-top: 0.5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(2) > div:nth-child(2) {
+  width: 50%;
+  height: 100%;
+  background-color: #DC0D28;
+  background-size: cover;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(1) > p {
+  margin-left: 2vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  background-color: rgba(220, 13, 40, 0.3);
+  background-color: #47D184;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div {
+  width: 30vw;
+  height: 30vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+  padding: 3vh;
+  font-size: 0.7rem;
+  background-color: rgba(220, 13, 40, 0.3);
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > h3 {
+  color: #fff;
+  width: 27vw;
+  height: 5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div {
+  width: 23vw;
+  height: 18vh;
+  background-color: rgba(220, 13, 40, 0.3);
+  padding: 3vh;
+  display: flex;
+  align-items: flex-end;
+  justify-content: flex-end;
+  flex-direction: column;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > h3 {
+  width: 20vw;
+  height: 5vh;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div {
+  width: 17vw;
+  height: 10vh;
+  background-color: rgba(220, 13, 40, 0.2);
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(2) > div > div > div > h3 {
+  color: #fff;
+  margin-top: 1vh;
+  margin-left: 1vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(3) > div:nth-child(3) > p {
+  color: #380000;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-color: #47D184;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) {
+  position: relative;
+  position: absolute;
+  top: 40vh;
+  width: 23.5vw;
+  display: flex;
+  justify-content: space-between;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(1) > p {
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(2) > p {
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(3) {
+  width: 1px;
+  height: 30vh;
+  background-color: #fff;
+  margin-left: 3vw;
+  margin-right: 3vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(4) {
+  width: 30vh;
+  height: 30vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(2) > div:nth-child(4) > p {
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(4) > div:nth-child(3) > p {
+  color: #380000;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  background-color: #47D184;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(2) > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #fff;
+  margin: 5vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(2) > div > p {
+  color: #fff;
+  margin-top: 1vh;
+  text-align: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(5) > div:nth-child(3) > p {
+  color: #380000;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #380000;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) {
+  background-color: #47D184;
+  width: 43vw;
+  height: 43vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div {
+  margin-top: 12vh;
+  margin-left: 0.7vw;
+  margin-right: 0.7vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div > h3 {
+  color: #fff;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div > p {
+  margin-bottom: 1vh;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) {
+  width: 2vw;
+  height: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div:nth-child(2) > img {
+  width: 80%;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div:nth-child(4) {
+  width: 2vw;
+  height: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(2) > div:nth-child(4) > img {
+  width: 80%;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(6) > div:nth-child(3) > p {
+  color: #380000;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+  background-image: url(/Code/image/plan/project2/mixbg.png);
+  background-size: cover;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) {
+  width: 43vw;
+  height: 17vh;
+  display: flex;
+  padding-top: 4vh;
+  padding-left: 4vw;
+  padding-right: 4vw;
+  display: flex;
+  flex-direction: row;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) > h3 {
+  width: 12vw;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) > p {
+  margin-left: 2vw;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) {
+  width: 43vw;
+  height: 43vh;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) > div:nth-child(1) {
+  width: 27vh;
+  height: 27vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) > div:nth-child(2) {
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(2) > div:nth-child(3) {
+  width: 27vh;
+  height: 27vh;
+  border-radius: 50%;
+  border: 1px solid #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(3) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(3) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}
+.planBox > div:nth-child(2) > div:nth-child(8) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  display: none;
+  flex-direction: column;
+}
+.planBox > div:nth-child(2) > div:nth-child(8) > div:nth-child(1) {
+  width: 43vw;
+  height: 60vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #81A6C0;
+}
+.planBox > div:nth-child(2) > div:nth-child(8) > div:nth-child(1) > img {
+  width: 110%;
+}
+.planBox > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) {
+  width: 43vw;
+  height: 5vh;
+  position: absolute;
+  bottom: 20vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+.planBox > div:nth-child(2) > div:nth-child(8) > div:nth-child(2) > p {
+  color: #1B4158;
+  margin-left: 1.5vw;
+  margin-right: 1.5vw;
+  margin-bottom: 1vh;
+}/*# sourceMappingURL=plan2.css.map */
