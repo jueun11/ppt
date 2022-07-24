@@ -407,6 +407,7 @@
   display: none;
   flex-direction: column;
   background-image: url(/image/plan/project2/mixbg.png);
+  background-color: #47D184;
   background-size: cover;
 }
 .planBox > div:nth-child(2) > div:nth-child(7) > div:nth-child(1) {
