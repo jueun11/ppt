@@ -19,8 +19,7 @@
   position: relative;
   width: 100%;
   z-index: 2;
-  filter: drop-shadow(5px 5px 0px rgba(99, 40, 0, 0.5));
-  /*그림자*/
+  filter: drop-shadow(5px 5px 0px rgba(99, 40, 0, 0.5)); /*그림자*/
 }
 #page4 > section > div:nth-child(2) {
   position: absolute;

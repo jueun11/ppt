@@ -439,7 +439,7 @@
         display: flex;
         display: none;
         flex-direction: column;
-        background-image: url(/Code/image/plan/project2/mixbg.png);
+        background-image: url(/image/plan/project2/mixbg.png);
         background-size: cover;
         &>div:nth-child(1){
           width: 43vw;
@@ -467,6 +467,7 @@
           flex-direction: row;
           align-items: center;
           justify-content: center;
+          // background-color: #1B4158;
           &>div:nth-child(1){
             width: 27vh;
             height: 27vh;
